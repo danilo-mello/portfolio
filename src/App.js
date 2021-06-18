@@ -7,12 +7,13 @@ import { Switch, Route } from "react-router-dom";
 
 import Burger from './components/Burger/Burger';
 import Menu from './components/Menu/Menu';
-import Projects from './components/Works/Projects'
+import WorksPage from './pages/WorksPage'
 import ContactPage from './pages/ContactPage'
-import About from './components/About/About'
+import AboutPage from './pages/AboutPage'
 // import PageNotFound from './components/PageNotFound/PageNotFound'
 // import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
+
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -22,8 +23,8 @@ function App() {
 
     <Switch>
       {/* <Route exact path="/" component={Application} /> */}
-      <Route exact path="/projects" component={Projects} />
-      <Route exact path="/about" component={About} />
+      <Route exact path="/projects" component={WorksPage} />
+      <Route exact path="/about" component={AboutPage} />
       <Route exact path="/contact" component={ContactPage} />
       {/* <Route component={PageNotFound} /> */}
     
@@ -31,6 +32,7 @@ function App() {
           <GlobalStyles />
           <div>
             <Hero />
+
           </div>
           <div ref={node}>
             <Burger open={open} setOpen={setOpen} />
