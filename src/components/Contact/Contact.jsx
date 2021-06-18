@@ -7,7 +7,7 @@ import {
             StyledContactTitlesSection,
             StyledContactFormSection
         } 
-from './ContactPage.styled';
+from './Contact.styled';
 
 import ContactForm from './ContactForm'
 
