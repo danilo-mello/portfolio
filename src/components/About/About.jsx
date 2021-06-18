@@ -7,11 +7,18 @@ import { StyledAboutSection,
         StyledSkillCard,
         StyledTitle,
         StyledTitleH1,
+        StyledTitleH2,
         StyledTitleH3,
         StyledAboutDescription,
         StyledAboutDescriptionP,
+        StyledSkillCardTitle,
+        StyledSkillCardDescription,
 
 } from './About.styled';
+
+
+import { SiJavascript, SiReact, SiPython, SiNodeDotJs } from "react-icons/si";
+
 
 
 const About = () => {
@@ -30,23 +37,42 @@ const About = () => {
             </StyledAboutPart1>
 
             <StyledAboutPart2>
-                <h1>Skills</h1>
+                <StyledTitleH1>Skills</StyledTitleH1>
                 <StyledSkillsSection>
                     <StyledSkillCard>
-                        <span>icon</span><h2>React</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        <StyledSkillCardTitle>
+                            <SiReact size={80} /><StyledTitleH2>React</StyledTitleH2>
+                        </StyledSkillCardTitle>
+                        <StyledSkillCardDescription>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        </StyledSkillCardDescription>
                     </StyledSkillCard>
+
                     <StyledSkillCard>
-                        <span>icon</span><h2>React</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        <StyledSkillCardTitle>
+                            <SiNodeDotJs size={80} /><StyledTitleH2>Node</StyledTitleH2>
+                        </StyledSkillCardTitle>
+                        <StyledSkillCardDescription>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        </StyledSkillCardDescription>
                     </StyledSkillCard>
+
                     <StyledSkillCard>
-                        <span>icon</span><h2>React</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        <StyledSkillCardTitle>
+                            <SiJavascript size={80} /><StyledTitleH2>Javascript</StyledTitleH2>
+                        </StyledSkillCardTitle>
+                        <StyledSkillCardDescription>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        </StyledSkillCardDescription>
                     </StyledSkillCard>
+
                     <StyledSkillCard>
-                        <span>icon</span><h2>React</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        <StyledSkillCardTitle>
+                            <SiPython size={80} /><StyledTitleH2>Python</StyledTitleH2>
+                        </StyledSkillCardTitle>
+                        <StyledSkillCardDescription>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
+                        </StyledSkillCardDescription>
                     </StyledSkillCard>
                 </StyledSkillsSection>
             </StyledAboutPart2>

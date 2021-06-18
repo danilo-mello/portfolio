@@ -123,7 +123,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                 />
                 <input
-                    type='email'
+                    type='text'
                     name='email'
                     placeholder='email'
                     value={toSend.email}
