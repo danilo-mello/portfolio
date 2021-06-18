@@ -1,25 +1,24 @@
 import styled from 'styled-components';
 
-export const StyledProjects = styled.div`
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
+export const StyledProjectsSection = styled.div`
+  @media (max-width: 576px) {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+  }
+  width: 100%;
+  height: 100vh;
+  
+  align-items: center;
+  color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
-  background: #0D0C1D;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5%;
-  width: 100%;
-  padding: 30px;
-  @media screen and (max-width: 760px) {
+  border: 2px solid #333333;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background: linear-gradient(to left,
+    #555555 25%, #333333 25% 75% );
 
-    grid-template-columns: repeat(1, 1fr);
-   
-  }
+
 `;

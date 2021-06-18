@@ -9,7 +9,7 @@ export const StyledContactForm = styled.div`
     margin-right: 0;
 
   }
-  background: #999999;
+  background: linear-gradient(to top, #888888, #999999 );
   align-items: center;
   color: #EFFFFA;
   display: flex;
@@ -19,6 +19,7 @@ export const StyledContactForm = styled.div`
   
 
   form {
+    opacity: .80;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -28,11 +29,12 @@ export const StyledContactForm = styled.div`
     
   }
 
-  border: 2px solid #999999;
   border-radius: 25px;
   
   input {
+    opacity: .80;
     margin-left: 1.5rem;
+    font-weight: 300;
     margin-right: 1.5rem;
     height: 2.5rem;
     font-size: 1.25rem;
@@ -45,6 +47,8 @@ export const StyledContactForm = styled.div`
     }
   }
   textarea {
+    opacity: .80;
+    font-weight: 300;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     height: 6rem;
@@ -61,6 +65,7 @@ export const StyledContactForm = styled.div`
 
   h2 {
     font-size: 2rem;
+    font-weight: 300;
     padding-top: 2rem;
     padding-left: 1.5rem;
     color: #0D0C1D;
@@ -74,6 +79,7 @@ export const StyledContactForm = styled.div`
 
     background-color: #333333;
     border: 2px solid #333333;
+    font-weight: 300;
     border-radius: 7px;
     color: #999999;
     padding: 15px 32px;

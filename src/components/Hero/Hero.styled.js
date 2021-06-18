@@ -8,6 +8,7 @@ export const StyledHero = styled.div`
     width: 100%;
   }
 
+
   a {
     font-size: 2rem;
     padding: 2rem 0;

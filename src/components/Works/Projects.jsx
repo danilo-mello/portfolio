@@ -1,14 +1,14 @@
 import React from 'react'
 
-import ProjectCard from './ProjectCard'
-import { StyledProjects } from './Projects.styled';
+import { StyledProjectsSection } from './Projects.styled';
+
+import ProjectsList from './ProjectsList'
 
 const Projects = () => {
     return (
-        <StyledProjects>
-            <ProjectCard name="Calc Log" title="Calc Log" description="Calculator web app with saving log function" />
-        </StyledProjects>
-
+        <StyledProjectsSection>
+            <ProjectsList />
+        </StyledProjectsSection>
     )
 }
 

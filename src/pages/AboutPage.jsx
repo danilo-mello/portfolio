@@ -7,11 +7,11 @@ import { theme } from '../theme';
 
 import Burger from '../components/Burger/Burger';
 import Menu from '../components/Menu/Menu';
-import Contact from '../components/Contact/Contact'
+import About from '../components/About/About'
 // import PageNotFound from '../components/PageNotFound/PageNotFound'
 // import Footer from '../components/Footer/Footer';
 
-const ContactPage = () => {
+const AboutPage = () => {
   const [open, setOpen] = useState(false);
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
@@ -20,7 +20,7 @@ const ContactPage = () => {
       <ThemeProvider theme={theme}>
           <GlobalStyles />
           <div>
-            <Contact />
+            <About />
           </div>
           <div ref={node}>
             <Burger open={open} setOpen={setOpen} />
@@ -29,4 +29,4 @@ const ContactPage = () => {
       </ThemeProvider>
   );
 }
-export default ContactPage;
+export default AboutPage;
