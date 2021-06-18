@@ -10,7 +10,7 @@ import Menu from './components/Menu/Menu';
 import Projects from './components/Works/Projects'
 import ContactPage from './pages/ContactPage'
 import About from './components/About/About'
-import PageNotFound from './components/PageNotFound/PageNotFound'
+// import PageNotFound from './components/PageNotFound/PageNotFound'
 // import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 
