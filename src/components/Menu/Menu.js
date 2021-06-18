@@ -6,13 +6,13 @@ const Menu = ({ open }) => {
     
   return (
     <StyledMenu open={open}>
-      <a href="/">
+      <a href="/projects">
         works
       </a>
-      <a href="/">
+      <a href="/about">
         about
         </a>
-      <a href="/">
+      <a href="/contact">
         contact
         </a>
     </StyledMenu>

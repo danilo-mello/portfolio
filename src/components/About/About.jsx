@@ -1,8 +1,13 @@
 import React from 'react'
 
+import { StyledAbout } from './About.styled';
+
+
 const About = () => {
     return (
-        <div>About</div>
+        <StyledAbout>
+            <div>About</div>
+        </StyledAbout>
     )
 }
 
