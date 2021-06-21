@@ -9,7 +9,7 @@ import Burger from '../components/Burger/Burger';
 import Menu from '../components/Menu/Menu';
 import Projects from '../components/Works/Projects'
 // import PageNotFound from '../components/PageNotFound/PageNotFound'
-// import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer/Footer';
 
 const WorksPage = () => {
   const [open, setOpen] = useState(false);
@@ -26,6 +26,8 @@ const WorksPage = () => {
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
           </div>
+          <Footer />
+
       </ThemeProvider>
   );
 }

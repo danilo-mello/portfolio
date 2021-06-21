@@ -10,10 +10,9 @@ export const StyledProjectsSection = styled.div`
   @media (max-width: 576px) {
 
   }
-
+  padding-top: 5rem;
   border: 2px solid #333333;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-radius: 25px;
   background: linear-gradient(to left, #555555 25%, #333333 25% 75% );
 
 `;
