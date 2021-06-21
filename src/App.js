@@ -11,7 +11,7 @@ import WorksPage from './pages/WorksPage'
 import ContactPage from './pages/ContactPage'
 import AboutPage from './pages/AboutPage'
 // import PageNotFound from './components/PageNotFound/PageNotFound'
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 
 
@@ -38,6 +38,7 @@ function App() {
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
           </div>
+          <Footer />
       </ThemeProvider>
     </Switch>
   );

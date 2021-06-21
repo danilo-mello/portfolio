@@ -1,19 +1,25 @@
 import React from 'react';
-import { StyledFooter } from './Footer.styled';
+import { 
+  StyledFooter,
+  StyledFooterLinks,
+  StyledFooterLink,
+  StyledFooterCR 
+} from './Footer.styled';
 
 const Footer = () => {
     
   return (
     <StyledFooter>
-      <a href="/">
-        works
-      </a>
-      <a href="/">
-        about
-        </a>
-      <a href="/">
-        contact
-        </a>
+      <StyledFooterLinks>
+        <StyledFooterLink href="/">home </StyledFooterLink>
+        <StyledFooterLink href="/projects">works </StyledFooterLink>
+        <StyledFooterLink href="/about">about </StyledFooterLink> 
+        <StyledFooterLink href="/contact">contact </StyledFooterLink> 
+      </StyledFooterLinks>
+      <StyledFooterCR>
+        © Danilo Mello 2021 - All Rights Reserved
+      </StyledFooterCR>
+        
     </StyledFooter>
   )
 }

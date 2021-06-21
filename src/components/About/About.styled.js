@@ -12,8 +12,7 @@ export const StyledAboutSection = styled.div`
   justify-content: center;
   padding-left: 10rem;
   padding-right: 10rem;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-radius: 25px;
   background: linear-gradient(to top,
     #555555 60%, #333333 25% 75% );
 `;
