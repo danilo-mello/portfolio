@@ -1,37 +1,58 @@
 import React from 'react'
 
-import { StyledAboutSection,
-        StyledAboutPart1,
-        StyledAboutPart2,
-        StyledSkillsSection,
-        StyledSkillCard,
-        StyledTitle,
-        StyledTitleH1,
-        StyledTitleH2,
-        StyledTitleH3,
-        StyledAboutDescription,
-        StyledAboutDescriptionP,
-        StyledSkillCardTitle,
-        StyledSkillCardDescription,
-
+import { 
+    StyledAboutSection,
+    StyledAboutPart1,
+    StyledAboutPart2,
+    StyledSkillsSection,
+    StyledSkillCard,
+    StyledTitle,
+    StyledTitleH1,
+    StyledTitleH3,
+    StyledAboutDescription,
+    StyledAboutDescriptionP,
+    StyledSkillCardTitle,
+    StyledSkillCardIcon,
+    StyledButton,
 } from './About.styled';
 
 
-import { SiJavascript, SiReact, SiPython, SiNodeDotJs } from "react-icons/si";
+import { 
+    SiJavascript, 
+    SiReact, 
+    SiPython, 
+    SiNodeDotJs, 
+    SiPostgresql, 
+    SiFirebase,
+    SiDjango,
+    SiJava,
+    SiMysql,
+    SiSass,
+    SiMongodb,
+    SiRedux
+
+} from "react-icons/si";
 
 
 
 const About = () => {
     return (
         <StyledAboutSection>
+
             <StyledAboutPart1>
+
                 <StyledTitle>
                     <StyledTitleH1>Hi, I'm Danilo</StyledTitleH1>
-                    <StyledTitleH3>About me</StyledTitleH3>
+                    <StyledTitleH3>Web Developer based in Vancouver</StyledTitleH3>
                 </StyledTitle>
 
                 <StyledAboutDescription>
-                    <StyledAboutDescriptionP>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enimPellentesque a sapien vel augue varius luctus vitae nec enimPellentesque a sapien vel augue varius luctus vitae nec enim</StyledAboutDescriptionP>
+                    <StyledAboutDescriptionP>
+                        A developer who loves building applications and websites that make life easier. A hard worker who combines a passion for web development with expertise in logic. Have developed several websites and applications mainly using React or Django.
+                    </StyledAboutDescriptionP>
+                    <StyledButton>
+                        Resume
+                    </StyledButton>
                 </StyledAboutDescription>
 
             </StyledAboutPart1>
@@ -39,41 +60,115 @@ const About = () => {
             <StyledAboutPart2>
                 <StyledTitleH1>Skills</StyledTitleH1>
                 <StyledSkillsSection>
+
                     <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiReact size={80} />
+                        </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
-                            <SiReact size={80} /><StyledTitleH2>React</StyledTitleH2>
+                            React
                         </StyledSkillCardTitle>
-                        <StyledSkillCardDescription>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
-                        </StyledSkillCardDescription>
                     </StyledSkillCard>
 
                     <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiNodeDotJs size={80} />
+                        </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
-                            <SiNodeDotJs size={80} /><StyledTitleH2>Node</StyledTitleH2>
+                            Node
                         </StyledSkillCardTitle>
-                        <StyledSkillCardDescription>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
-                        </StyledSkillCardDescription>
                     </StyledSkillCard>
 
                     <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiJavascript size={80} />
+                        </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
-                            <SiJavascript size={80} /><StyledTitleH2>Javascript</StyledTitleH2>
+                            Javascript
                         </StyledSkillCardTitle>
-                        <StyledSkillCardDescription>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
-                        </StyledSkillCardDescription>
                     </StyledSkillCard>
 
                     <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiPython size={80} />
+                        </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
-                            <SiPython size={80} /><StyledTitleH2>Python</StyledTitleH2>
+                            Python
                         </StyledSkillCardTitle>
-                        <StyledSkillCardDescription>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien vel augue varius luctus vitae nec enim</p>
-                        </StyledSkillCardDescription>
                     </StyledSkillCard>
+
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiMongodb size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            MongoDB
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiRedux size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            Redux
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiPostgresql size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            PostgresSQL
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiFirebase size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            Firebase
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiDjango size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            Django
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiJava size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            Java
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+                    
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiMysql size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            MySQL
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+                    
+                    <StyledSkillCard>
+                        <StyledSkillCardIcon>
+                            <SiSass size={80} />
+                        </StyledSkillCardIcon>
+                        <StyledSkillCardTitle>
+                            Sass
+                        </StyledSkillCardTitle>
+                    </StyledSkillCard>
+                    
                 </StyledSkillsSection>
             </StyledAboutPart2>
 

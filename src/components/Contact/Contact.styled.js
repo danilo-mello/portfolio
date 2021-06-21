@@ -2,21 +2,20 @@ import styled from 'styled-components';
 
 export const StyledContatcSection = styled.div`
   @media (max-width: 576px) {
-    width: 100%;
-    height: 100vh;
+
     flex-direction: column;
   }
-  width: 100%;
   height: 100vh;
   align-items: center;
+  justify-content: center;
   color: white;
   display: flex;
-  justify-content: center;
   padding-left: 10rem;
   padding-right: 10rem;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-  background: linear-gradient(to top, #333333, #555555 );
+  background: linear-gradient(to top,
+    #555555 25%, #333333 25% 75% );
 `;
 
 export const StyledContactTitlesSection = styled.div`
@@ -38,6 +37,10 @@ export const StyledContactSubTitle = styled.h4`
   @media (max-width: 576px) {
     font-size: 2rem;
   }
+  &:hover {
+    transform: scale(1.01); 
+    transition: transform 0.3s ease-in-out
+  }
 
 
 `;
@@ -50,4 +53,9 @@ export const StyledContactTitle = styled.h1`
   @media (max-width: 576px) {
     font-size: 3.5rem;
   }
+  &:hover {
+    transform: scale(1.01); 
+    transition: transform 0.3s ease-in-out
+  }
+  
 `;

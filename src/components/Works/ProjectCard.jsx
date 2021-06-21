@@ -1,36 +1,45 @@
 import React from 'react'
 
-import { StyledProjectsCard, 
+import { 
+    StyledProjectsCard, 
     StyledProjectImage,
     StyledImage,
-    StyledProjectInfo,
-    StyledProjectText,
     StyledProjectLinksSection,
-    StyledProjectLink
+    StyledProjectLink,
+    StyledProjectTitle,
+    StyledProjectDescription,
+    StyledProjectTools
 } from './ProjectCard.styled';
-import calclog from '../../calclog.png'
+import calclog from '../../static/img/calc-log.png'
 
 const ProjectsCard = (props) => {
     return (
+
         <StyledProjectsCard>
+
+            <StyledProjectTitle>
+                {props.name}
+            </StyledProjectTitle>
             
             <StyledProjectImage>
-                <StyledImage src={calclog} height="420" alt="img"/>
+                <StyledImage src={calclog} height="420" alt={props.name}/>
             </StyledProjectImage>
 
-            <StyledProjectInfo>
-                <StyledProjectText>
-                    
-                    <h1>Harvest Vase</h1>
-                    <h2>by studio and friends</h2>
-                    <p>Harvest Vases are a reinterpretation of peeled fruits and vegetables as functional objects. The surfaces appear to be sliced and pulled aside, allowing room for growth. </p>
-                </StyledProjectText>
-                <StyledProjectLinksSection>
-                    <StyledProjectLink>Visit!</StyledProjectLink>
-                    <StyledProjectLink>Github</StyledProjectLink>
-                </StyledProjectLinksSection>
-            </StyledProjectInfo>
-            
+
+            <StyledProjectDescription>
+                {props.description}
+            </StyledProjectDescription>
+
+            <StyledProjectTools>
+            </StyledProjectTools>
+      
+            <StyledProjectLinksSection>
+
+                <StyledProjectLink href={props.link} target="_blank">Visit!</StyledProjectLink>
+                <StyledProjectLink href={props.github} target="_blank">Github</StyledProjectLink>
+
+            </StyledProjectLinksSection>
+
         </StyledProjectsCard>
 
     )
