@@ -20,7 +20,7 @@ const ProjectsCard = (props) => {
             <StyledProjectTitle>
                 {props.name}
             </StyledProjectTitle>
-            
+
             <StyledProjectImage>
                 <StyledImage src={calclog} height="420" alt={props.name}/>
             </StyledProjectImage>
