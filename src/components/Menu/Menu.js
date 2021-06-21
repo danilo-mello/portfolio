@@ -6,6 +6,9 @@ const Menu = ({ open }) => {
     
   return (
     <StyledMenu open={open}>
+      <a href="/">
+        home
+      </a>
       <a href="/projects">
         works
       </a>
