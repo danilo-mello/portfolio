@@ -63,10 +63,7 @@ export const StyledProjectDescription = styled.div`
   color: #0D0C1D;
   font-size: 1.2rem;
   font-weigth: 350;
-  &:hover {
-    transform: scale(1.01); 
-    transition: transform 0.3s ease-in-out
-  }
+
 `;
 
 export const StyledProjectTitle = styled.div`
@@ -85,4 +82,23 @@ export const StyledProjectTitle = styled.div`
 
 `;
 
-export const StyledProjectTools = styled.div``;
+export const StyledProjectTools = styled.div`
+  text-align: center;
+  display: flex;
+  justify-content: left;
+`;
+
+export const StyledProjectTool = styled.div`
+  background: #777777;
+  color: #0D0C1D;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  &:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out
+  }
+
+`;

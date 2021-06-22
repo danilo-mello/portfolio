@@ -8,9 +8,10 @@ import {
     StyledProjectLink,
     StyledProjectTitle,
     StyledProjectDescription,
-    StyledProjectTools
+    StyledProjectTools,
+    StyledProjectTool
 } from './ProjectCard.styled';
-import calclog from '../../static/img/calc-log.png'
+
 
 const ProjectsCard = (props) => {
     return (
@@ -22,7 +23,7 @@ const ProjectsCard = (props) => {
             </StyledProjectTitle>
             
             <StyledProjectImage>
-                <StyledImage src={calclog} height="420" alt={props.name}/>
+                <StyledImage src={props.image} height="420" alt={props.name}/>
             </StyledProjectImage>
 
 
@@ -31,6 +32,13 @@ const ProjectsCard = (props) => {
             </StyledProjectDescription>
 
             <StyledProjectTools>
+                {props.tools && props.tools.map(tool => {
+                        return(
+                            <StyledProjectTool>{tool.icon} {tool.name}</StyledProjectTool>
+                        )
+                    }
+                )}
+
             </StyledProjectTools>
       
             <StyledProjectLinksSection>
