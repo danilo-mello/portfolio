@@ -10,14 +10,11 @@ import {
     SiJavascript, 
     SiReact, 
     SiPython, 
-    SiNodeDotJs, 
     SiPostgresql, 
     SiFirebase,
     SiDjango,
     SiJava,
-    SiMysql,
     SiSass,
-    SiMongodb,
     SiRedux
 
 } from "react-icons/si";
