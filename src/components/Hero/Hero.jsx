@@ -1,13 +1,30 @@
 import React from 'react';
-import { StyledHero } from './Hero.styled';
+import { 
+  StyledHero,
+  StyledHeroTitle,
+  StyledHeroSubTitle,
+  StyledHeroImage,
+  StyledHeroLinkSection, 
+  StyledHeroLink,
+} from './Hero.styled';
+
+  import home from '../../static/img/home.jpg'
 
 const Hero = () => {
     
   return (
     <StyledHero >
-        <h1>danilo mello</h1>
-        <h2>portfolio - developer</h2>
-        <img src="https://picsum.photos/400" alt="danilo mello" />
+        <StyledHeroTitle>danilo mello</StyledHeroTitle>
+        <StyledHeroSubTitle>portfolio - developer</StyledHeroSubTitle>
+        <StyledHeroLinkSection>
+          <StyledHeroLink href="/projects">works </StyledHeroLink>
+          &bull;
+          <StyledHeroLink href="/about"> about </StyledHeroLink> 
+          &bull;
+          <StyledHeroLink href="/contact"> contact </StyledHeroLink>  
+        </StyledHeroLinkSection>
+       
+        <StyledHeroImage src={home} height="400px" alt="danilo mello" />
     </StyledHero>
   )
 }
