@@ -8,6 +8,7 @@ export const StyledProjectsSection = styled.div`
   flex-direction: column;
 
   @media (max-width: 576px) {
+    display: none;
 
   }
   padding-top: 5rem;

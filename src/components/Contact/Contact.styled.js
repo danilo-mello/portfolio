@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledContatcSection = styled.div`
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
+  display: none;
 
-    flex-direction: column;
-  }
+}
   height: 100vh;
   align-items: center;
   justify-content: center;

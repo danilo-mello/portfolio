@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledAboutSection = styled.div`
   @media (max-width: 576px) {
+    display: none;
 
   }
 
