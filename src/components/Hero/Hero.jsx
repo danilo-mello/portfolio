@@ -24,7 +24,7 @@ const Hero = () => {
           <StyledHeroLink href="/contact"> contact </StyledHeroLink>  
         </StyledHeroLinkSection>
        
-        <StyledHeroImage src={home} height="400px" alt="danilo mello" />
+        <StyledHeroImage src={home} alt="danilo mello" />
     </StyledHero>
   )
 }

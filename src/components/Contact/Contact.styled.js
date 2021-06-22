@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 export const StyledContatcSection = styled.div`
 @media (max-width: 576px) {
-  display: none;
-
+  align-items: center;
+  padding: 0.5rem 0rem 2rem 1rem;
+  margin: 5rem 1rem 0 2rem;
+  flex-direction: column;
+  height: auto;
+  
 }
-  height: 100vh;
+  height: 900px;
   align-items: center;
   justify-content: center;
   color: white;
@@ -20,13 +24,12 @@ export const StyledContatcSection = styled.div`
 export const StyledContactTitlesSection = styled.div`
   padding-right: 10rem;
   padding-bottom: 12rem;
+  @media (max-width: 576px) {
+    padding: 0;
+    margin: 0;
+  }
 `;
 
-export const StyledContactFormSection = styled.div`
-
-  
-
-`;
 
 export const StyledContactSubTitle = styled.h4`
   color: #666666;
@@ -35,6 +38,8 @@ export const StyledContactSubTitle = styled.h4`
 
   @media (max-width: 576px) {
     font-size: 2rem;
+    padding: 0;
+    margin: 0;
   }
   &:hover {
     transform: scale(1.01); 

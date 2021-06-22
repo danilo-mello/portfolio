@@ -6,7 +6,11 @@ export const StyledHero = styled.div`
   flex-direction: column;
 
   @media (max-width: 576px) {
-    display: none;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 5rem 2rem 0rem 2rem;
 
   }
   border: 2px solid #333333;
@@ -24,7 +28,8 @@ export const StyledHeroTitle = styled.h1`
   font-weight: 350;
   margin-bottom: 0;
   @media (max-width: 576px) {
-    font-size: 3.5rem;
+    text-align: center;
+    font-size: 2.5rem;
   }
   &:hover {
     transform: scale(1.01); 
@@ -38,7 +43,8 @@ export const StyledHeroSubTitle = styled.h2`
   font-weight: 300;
   text-align: left;
   @media (max-width: 576px) {
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
   }
   &:hover {
     transform: scale(1.01); 
@@ -49,9 +55,17 @@ export const StyledHeroSubTitle = styled.h2`
 `;
 
 export const StyledHeroImage = styled.img`
-  align-items: center;
   opacity: 0.9;
   border-radius: 7px;
+  height: 400px;
+  @media (max-width: 576px) {
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin-top: 2rem;
+
+    margin-bottom: 2rem;
+  }
   &:hover {
     transform: scale(1.01); 
     transition: transform 0.3s ease-in-out
