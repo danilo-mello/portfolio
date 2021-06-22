@@ -5,7 +5,6 @@ import {
             StyledContactTitle,
             StyledContatcSection,
             StyledContactTitlesSection,
-            StyledContactFormSection
         } 
 from './Contact.styled';
 
