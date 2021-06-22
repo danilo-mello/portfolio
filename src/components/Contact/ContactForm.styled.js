@@ -91,7 +91,7 @@ export const StyledContactForm = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     &:hover {
-      color: #999999;
+      color: #0D0C1D;
       background-color: #555555;
       transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
