@@ -25,6 +25,9 @@ export const StyledFooterLink = styled.a`
     transform: scale(1.05); 
     transition: transform 0.3s ease-in-out;
   }
+  @media (max-width: 576px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const StyledFooterCR = styled.div`
@@ -32,4 +35,7 @@ export const StyledFooterCR = styled.div`
   font-size: 1.25rem;
   font-weigth: 300;
   letter-spacing: 1px;
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;

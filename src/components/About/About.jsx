@@ -63,7 +63,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiReact size={80} />
+                            <SiReact  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             React
@@ -72,7 +72,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiNodeDotJs size={80} />
+                            <SiNodeDotJs  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Node
@@ -81,7 +81,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiJavascript size={80} />
+                            <SiJavascript  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Javascript
@@ -90,7 +90,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiPython size={80} />
+                            <SiPython  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Python
@@ -99,7 +99,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiMongodb size={80} />
+                            <SiMongodb  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             MongoDB
@@ -108,7 +108,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiRedux size={80} />
+                            <SiRedux  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Redux
@@ -117,7 +117,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiPostgresql size={80} />
+                            <SiPostgresql  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             PostgresSQL
@@ -126,7 +126,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiFirebase size={80} />
+                            <SiFirebase  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Firebase
@@ -135,7 +135,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiDjango size={80} />
+                            <SiDjango  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Django
@@ -144,7 +144,7 @@ const About = () => {
 
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiJava size={80} />
+                            <SiJava  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Java
@@ -153,7 +153,7 @@ const About = () => {
                     
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiMysql size={80} />
+                            <SiMysql  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             MySQL
@@ -162,7 +162,7 @@ const About = () => {
                     
                     <StyledSkillCard>
                         <StyledSkillCardIcon>
-                            <SiSass size={80} />
+                            <SiSass  />
                         </StyledSkillCardIcon>
                         <StyledSkillCardTitle>
                             Sass

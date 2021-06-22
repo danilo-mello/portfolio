@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
 export const StyledAboutSection = styled.div`
-  @media (max-width: 576px) {
-    display: none;
+@media (max-width: 576px) {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  margin: 5rem 0 0rem 2rem;
+  background: linear-gradient(to top,
+    #555555 56%, #333333 25% 75% );
 
-  }
+}
 
   align-items: center;
   color: #EFFFFA;
@@ -25,6 +31,8 @@ export const StyledAboutPart1 = styled.div`
   padding-bottom: 150px;
   @media (max-width: 576px) {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
 `;
@@ -34,6 +42,11 @@ export const StyledAboutPart2 = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-bottom: 2rem;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
 
 `;
 
@@ -62,12 +75,19 @@ export const StyledSkillCard = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 
   }
+  @media (max-width: 576px) {
+    width: auto;
+    height: 80px;
+    margin: 0.5rem;
+  }
 
 `;
 
 export const StyledTitle = styled.div`
   margin-top: 5rem;
-
+  @media (max-width: 576px) {
+    margin-top: 1rem;
+  }
 `;
 
 export const StyledTitleH1 = styled.h1`
@@ -77,7 +97,10 @@ export const StyledTitleH1 = styled.h1`
   text-shadow: 1px 1px #666666;
   font-weight: 350;
   @media (max-width: 576px) {
-    font-size: 3.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-right: 0;
+
   }
 `;
 
@@ -89,7 +112,9 @@ export const StyledTitleH2 = styled.h2`
   text-shadow: 1px 1px #666666;
   font-weight: 350;
   @media (max-width: 576px) {
+    text-align: center;
     font-size: 1.5rem;
+    padding-right: 0;
   }
 `;
 
@@ -99,7 +124,8 @@ export const StyledTitleH3 = styled.h3`
   text-shadow: 1px 1px #666666;
   font-weight: 350;
   @media (max-width: 576px) {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.25rem;
   }
 `;
 
@@ -118,6 +144,14 @@ export const StyledAboutDescription = styled.div`
     transform: scale(1.01); 
     transition: transform 0.3s ease-in-out;
   }
+  @media (max-width: 576px) {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 1rem 2rem 1rem;
+    width: auto;
+    height: auto;
+  }
 `;
 
 export const StyledAboutDescriptionP = styled.p`
@@ -126,13 +160,12 @@ export const StyledAboutDescriptionP = styled.p`
   padding: 1rem;
   color: #0D0C1D;
 
+  @media (max-width: 576px) {
+    font-size: 1rem;
 
+  }
 `;
 
-export const StyledIcon = styled.span`
-  font-size: 5rem;
-
-`;
 
 export const StyledSkillCardTitle = styled.div`
   justify-content: center;
@@ -143,15 +176,20 @@ export const StyledSkillCardTitle = styled.div`
   font-weight: 350;
   padding-top: 1rem;
   @media (max-width: 576px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding-top: 0;
+
   }
 
 `;
 
 export const StyledSkillCardIcon = styled.div`
-  font-size: 1.1rem;
   justify-content: center;
   text-align: center;
+  font-size: 5rem;
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
 
 `;
 
@@ -172,5 +210,11 @@ export const StyledButton = styled.div`
     background-color: #555555;
     transform: scale(1.01); 
     transition: transform 0.3s ease-in-out
+  }
+  @media (max-width: 576px) {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
   }
 `;

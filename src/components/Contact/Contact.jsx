@@ -24,11 +24,9 @@ const Contact = () => {
 
             </StyledContactTitlesSection>
 
-            <StyledContactFormSection>
 
-                <ContactForm />
+            <ContactForm />
 
-            </StyledContactFormSection>
 
         </StyledContatcSection>
 
