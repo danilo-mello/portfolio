@@ -6,10 +6,13 @@ export const StyledProjectsSection = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
+  width: 75rem;
+
 
   @media (max-width: 576px) {
-    display: none;
-
+    width: 19rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    margin: 5rem 0 0rem 1.75rem;
   }
   padding-top: 5rem;
   border: 2px solid #333333;
@@ -22,10 +25,11 @@ export const ProjectsSectionTitle = styled.div`
   text-align: left;
   color: #EFFFFA;
   padding-top: 1rem;
+  padding-bottom: 2rem;
   font-size: 3.5rem;
   text-shadow: 1px 1px #666666;
   font-weight: 350;
   @media (max-width: 576px) {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 `;

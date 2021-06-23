@@ -4,14 +4,14 @@ export const StyledAboutSection = styled.div`
 @media (max-width: 576px) {
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 19rem;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  margin: 5rem 0 0rem 2rem;
+  margin: 5rem 0 0rem 1.75rem;
   background: linear-gradient(to top,
     #555555 56%, #333333 25% 75% );
 
 }
-
+  width: 75rem;
   align-items: center;
   color: #EFFFFA;
   display: flex;
@@ -60,9 +60,10 @@ export const StyledSkillsSection = styled.div`
 `;
 
 export const StyledSkillCard = styled.div`
-  width: 300px;
-  height: 250px;
+  width: 15rem;
+  height: 12rem;
   display: flex;
+  margin: 0.5rem;
   flex-direction: column;
   justify-content: center;
   padding: 1.5rem;

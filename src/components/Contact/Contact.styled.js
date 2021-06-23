@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const StyledContatcSection = styled.div`
 @media (max-width: 576px) {
   align-items: center;
-  padding: 0.5rem 0rem 2rem 1rem;
-  margin: 5rem 1rem 0 2rem;
+  padding: 0.5rem 0rem 2rem 0rem;
+  margin: 5rem 0 0 1.75rem;
   flex-direction: column;
-  height: auto;
+  width: 19rem;
   
 }
-  height: 900px;
+  height: 56rem;;
+  width: 75rem;
   align-items: center;
   justify-content: center;
   color: white;
@@ -40,6 +41,9 @@ export const StyledContactSubTitle = styled.h4`
     font-size: 2rem;
     padding: 0;
     margin: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
   &:hover {
     transform: scale(1.01); 
@@ -55,7 +59,10 @@ export const StyledContactTitle = styled.h1`
   text-shadow: 1px 1px #666666;
   font-weight: 350;
   @media (max-width: 576px) {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0;
   }
   &:hover {
     transform: scale(1.01); 

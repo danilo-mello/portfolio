@@ -4,19 +4,23 @@ export const StyledHero = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-
+  
   @media (max-width: 576px) {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 19rem;
+    height: 30rem;
+
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     margin: 5rem 2rem 0rem 2rem;
 
   }
+  width: 75rem;
+  height: 58em;
   border: 2px solid #333333;
   border-radius: 25px;
   background: linear-gradient(to bottom right, #333333 0%, #333333 50%, #555555 50%, #555555 100%);
-  padding: 10rem 15rem 10rem 15rem;;
+  padding: 10rem 15rem 10rem 25rem;
 
 `;
 
@@ -57,11 +61,13 @@ export const StyledHeroSubTitle = styled.h2`
 export const StyledHeroImage = styled.img`
   opacity: 0.9;
   border-radius: 7px;
-  height: 400px;
+  height: 25rem;
+  width: 25rem;
+
   @media (max-width: 576px) {
     align-items: center;
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
     margin-top: 2rem;
 
     margin-bottom: 2rem;

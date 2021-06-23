@@ -5,8 +5,7 @@ export const StyledContactForm = styled.div`
   
   
   @media (max-width: 576px) {
-    width: 80%;
-    margin-right: 0;
+    width: 18rem;
 
   }
   background: linear-gradient(to top, #888888, #999999 );
@@ -23,9 +22,10 @@ export const StyledContactForm = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
-    height: 650px;
-    width: 450px;
+    height: 36rem;
+    width: 21rem;
     justify-content: space-between
+
     
   }
 
@@ -45,6 +45,14 @@ export const StyledContactForm = styled.div`
       transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
     }
+    @media (max-width: 576px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      
+      width: 250px;
+      font-size: 1.25rem;
+
+    }
   }
   textarea {
     opacity: .80;
@@ -61,6 +69,14 @@ export const StyledContactForm = styled.div`
       transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
     }
+    @media (max-width: 576px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: auto;
+      font-size: 1.4rem;
+
+
+    }
   }
 
   h2 {
@@ -73,6 +89,10 @@ export const StyledContactForm = styled.div`
       transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
     }
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+
+    }
   }
 
   button {
@@ -82,12 +102,13 @@ export const StyledContactForm = styled.div`
     font-weight: 300;
     border-radius: 7px;
     color: #999999;
-    padding: 15px 32px;
+    padding: 1rem;
     text-align: center;
+    width: 10rem;
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
-    margin: 2rem 14rem 2rem 2rem;
+    margin: 1rem 1rem 1.5rem 1.5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     &:hover {
@@ -95,6 +116,11 @@ export const StyledContactForm = styled.div`
       background-color: #555555;
       transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
+    }
+    @media (max-width: 576px) {
+      margin 1rem;
+      padding: 1rem;
+  
     }
   }
 

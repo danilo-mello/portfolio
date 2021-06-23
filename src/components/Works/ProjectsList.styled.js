@@ -4,10 +4,10 @@ export const StyledProjectsList = styled.div`
 
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 30px;
-  @media screen and (max-width: 760px) {
-
-   
+  width: 65rem;
+  padding: 2rem;
+  @media (max-width: 576px) {
+    width: 17rem;
+    padding: 0rem;
   }
 `;
