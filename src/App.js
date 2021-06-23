@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useOnClickOutside } from './hooks';
-import { GlobalStyles, StyledPageSection } from './global';
+import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Switch, Route } from "react-router-dom";
 
