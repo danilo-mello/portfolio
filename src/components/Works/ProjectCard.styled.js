@@ -56,7 +56,7 @@ background-color: #333333;
 border: 2px solid #333333;
 font-weight: 300;
 border-radius: 7px;
-color: #999999;
+color: #EFFFFA;
 padding: 1rem 2rem;
 text-align: center;
 display: inline-block;
@@ -64,7 +64,7 @@ font-size: 1.5rem;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 cursor: pointer;
 &:hover {
-  color: #0D0C1D;
+  color: #000000;
   background-color: #555555;
   transform: scale(1.01); 
   transition: transform 0.3s ease-in-out

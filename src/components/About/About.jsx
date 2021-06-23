@@ -43,7 +43,7 @@ const About = () => {
 
                 <StyledTitle>
                     <StyledTitleH1>Hi, I'm Danilo</StyledTitleH1>
-                    <StyledTitleH3>Web Developer based in Vancouver</StyledTitleH3>
+                    <StyledTitleH3>Developer based in Vancouver</StyledTitleH3>
                 </StyledTitle>
 
                 <StyledAboutDescription>

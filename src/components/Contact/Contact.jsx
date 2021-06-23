@@ -19,7 +19,7 @@ const Contact = () => {
 
                 <StyledContactSubTitle>contact</StyledContactSubTitle>
 
-                <StyledContactTitle>Get in touch</StyledContactTitle>
+                <StyledContactTitle>get in touch</StyledContactTitle>
 
             </StyledContactTitlesSection>
 

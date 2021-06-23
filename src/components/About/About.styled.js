@@ -201,7 +201,7 @@ export const StyledButton = styled.div`
   border: 2px solid #333333;
   font-weight: 300;
   border-radius: 7px;
-  color: #999999;
+  color: #EFFFFA;
   padding: 1rem 2rem;
   text-align: center;
   display: inline-block;
@@ -210,7 +210,7 @@ export const StyledButton = styled.div`
   cursor: pointer;
   margin-bottom: 5rem;
   &:hover {
-    color: #0D0C1D;
+    color: #000000;
     background-color: #555555;
     transform: scale(1.01); 
     transition: transform 0.3s ease-in-out

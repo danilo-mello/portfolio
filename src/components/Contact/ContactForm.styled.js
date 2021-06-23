@@ -101,7 +101,7 @@ export const StyledContactForm = styled.div`
     border: 2px solid #333333;
     font-weight: 300;
     border-radius: 7px;
-    color: #999999;
+    color: #EFFFFA;
     padding: 1rem;
     text-align: center;
     width: 10rem;
@@ -112,7 +112,7 @@ export const StyledContactForm = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     &:hover {
-      color: #0D0C1D;
+      color: #000000;
       background-color: #555555;
       transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
