@@ -57,7 +57,7 @@ border: 2px solid #333333;
 font-weight: 300;
 border-radius: 7px;
 color: #999999;
-padding: 2rem 2rem;
+padding: 1rem 2rem;
 text-align: center;
 display: inline-block;
 font-size: 1.5rem;

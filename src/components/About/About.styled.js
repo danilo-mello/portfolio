@@ -27,8 +27,8 @@ export const StyledAboutSection = styled.div`
 export const StyledAboutPart1 = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
   @media (max-width: 576px) {
     flex-direction: column;
     padding: 0;
@@ -61,9 +61,9 @@ export const StyledSkillsSection = styled.div`
 
 export const StyledSkillCard = styled.div`
   width: 15rem;
-  height: 12rem;
   display: flex;
   margin: 0.5rem;
+
   flex-direction: column;
   justify-content: center;
   padding: 1.5rem;
@@ -78,7 +78,7 @@ export const StyledSkillCard = styled.div`
   }
   @media (max-width: 576px) {
     width: auto;
-    height: 80px;
+    height: 5rem;
     margin: 0.5rem;
   }
 
@@ -137,8 +137,10 @@ export const StyledAboutDescription = styled.div`
   border-radius: 25px;
   opacity: 0.9;
   margin-top: 5rem;
-  height: 250px;
-  width: 650px;
+
+
+  height: 18rem;
+  width: 40rem;
   justify-content: center;
   text-align: center;
   &:hover {
@@ -200,12 +202,13 @@ export const StyledButton = styled.div`
   font-weight: 300;
   border-radius: 7px;
   color: #999999;
-  padding: 15px 32px;
+  padding: 1rem 2rem;
   text-align: center;
   display: inline-block;
   font-size: 1.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  margin-bottom: 5rem;
   &:hover {
     color: #0D0C1D;
     background-color: #555555;
