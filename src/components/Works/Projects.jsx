@@ -9,7 +9,7 @@ const Projects = () => {
         <StyledProjectsSection>
 
             <ProjectsSectionTitle>
-                Works
+                works
             </ProjectsSectionTitle>
 
             <ProjectsList />
