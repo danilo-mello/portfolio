@@ -4,6 +4,9 @@ export const StyledHero = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+
   
   @media (max-width: 576px) {
     display: flex;

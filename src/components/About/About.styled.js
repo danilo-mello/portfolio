@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
 export const StyledAboutSection = styled.div`
-@media (max-width: 576px) {
-  display: flex;
-  align-items: center;
-  width: 19rem;
-  padding: 0.5rem 0rem 0.5rem 0rem;
-  margin: 5rem 0 0rem 1.75rem;
-  background: linear-gradient(to top,
-    #555555 56%, #333333 25% 75% );
+  @media (max-width: 576px) {
+    display: flex;
+    align-items: center;
+    width: 19rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    margin: 5rem 0 0rem 1.75rem;
+    background: linear-gradient(to top,
+      #555555 56%, #333333 25% 75% );
 
-}
+  }
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
   width: 75rem;
   align-items: center;
   color: #EFFFFA;

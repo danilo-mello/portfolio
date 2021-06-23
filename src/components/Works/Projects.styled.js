@@ -7,6 +7,9 @@ export const StyledProjectsSection = styled.div`
   display: flex;
   flex-direction: column;
   width: 75rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+
 
 
   @media (max-width: 576px) {

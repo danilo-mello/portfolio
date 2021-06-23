@@ -9,8 +9,10 @@ export const StyledContatcSection = styled.div`
   width: 19rem;
   
 }
+  margin-top: 1.5rem;
   height: 56rem;;
   width: 75rem;
+  margin-bottom: 2rem;
   align-items: center;
   justify-content: center;
   color: white;
