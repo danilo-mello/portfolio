@@ -8,6 +8,7 @@ export const StyledContactForm = styled.div`
     width: 18rem;
 
   }
+
   background: linear-gradient(to top, #888888, #999999 );
   align-items: center;
   color: #EFFFFA;
@@ -49,7 +50,7 @@ export const StyledContactForm = styled.div`
       margin-left: 1rem;
       margin-right: 1rem;
       
-      width: 250px;
+      width: 16rem;
       font-size: 1.25rem;
 
     }
@@ -72,10 +73,8 @@ export const StyledContactForm = styled.div`
     @media (max-width: 576px) {
       margin-left: 1rem;
       margin-right: 1rem;
-      width: auto;
-      font-size: 1.4rem;
-
-
+      width: 16rem;
+      font-size: 1.25rem;
     }
   }
 

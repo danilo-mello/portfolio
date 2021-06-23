@@ -10,4 +10,15 @@ export const StyledProjectsList = styled.div`
     width: 17rem;
     padding: 0rem;
   }
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: slidein;
+    @keyframes slidein {
+      from {
+        padding-left: 8rem;
+      to {
+        padding-left: 0rem;
+      }
+    }
+  }
 `;

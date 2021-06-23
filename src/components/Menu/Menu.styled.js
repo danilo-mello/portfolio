@@ -35,7 +35,7 @@ export const StyledMenu = styled.nav`
     }
 
     &:hover {
-      color: ${({ theme }) => theme.primaryHover};
+      color: #333333;
       transform: scale(1.05); 
       transition: transform 0.3s ease-in-out
     }

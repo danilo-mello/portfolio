@@ -13,7 +13,9 @@ import AboutPage from './pages/AboutPage'
 // import PageNotFound from './components/PageNotFound/PageNotFound'
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
-
+import Projects from './components/Works/Projects';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -32,7 +34,9 @@ function App() {
           <GlobalStyles />
           <div>
             <Hero />
-
+            <About />
+            <Projects />
+            <Contact /> 
           </div>
           <div ref={node}>
             <Burger open={open} setOpen={setOpen} />

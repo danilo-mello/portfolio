@@ -9,8 +9,10 @@ export const StyledContatcSection = styled.div`
   width: 19rem;
   
 }
+  margin-top: 1.5rem;
   height: 56rem;;
   width: 75rem;
+  margin-bottom: 2rem;
   align-items: center;
   justify-content: center;
   color: white;
@@ -29,6 +31,22 @@ export const StyledContactTitlesSection = styled.div`
     padding: 0;
     margin: 0;
   }
+  
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: slidein;
+    @keyframes slidein {
+      from {
+        padding-right: 16rem;
+      }
+    
+      to {
+        padding-right: 10rem;
+        padding-bottom: 12rem;
+      }
+    }
+  }
+
 `;
 
 
