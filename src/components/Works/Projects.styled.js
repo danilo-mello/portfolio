@@ -32,4 +32,15 @@ export const ProjectsSectionTitle = styled.div`
   @media (max-width: 576px) {
     font-size: 3rem;
   }
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: slidein;
+    @keyframes slidein {
+      from {
+        padding-left: 8rem;
+      to {
+        padding-left: 0rem;
+      }
+    }
+  }
 `;

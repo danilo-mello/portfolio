@@ -15,6 +15,7 @@ export const StyledHero = styled.div`
     margin: 5rem 2rem 0rem 2rem;
 
   }
+
   width: 75rem;
   height: 58em;
   border: 2px solid #333333;
@@ -39,6 +40,22 @@ export const StyledHeroTitle = styled.h1`
     transform: scale(1.01); 
     transition: transform 0.3s ease-in-out
   }
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: bbb;
+    @keyframes bbb {
+      from {
+        padding: 0rem 0rem 0rem 2rem;
+        color: #999999;
+
+      to {
+        padding: 0;
+        color: #EFFFFA;
+
+      }
+    }
+  }
+
 `;
 
 export const StyledHeroSubTitle = styled.h2`
@@ -56,6 +73,22 @@ export const StyledHeroSubTitle = styled.h2`
   }
   align-items: left;
 
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: ccc;
+    @keyframes ccc {
+      from {
+          color: #444444;
+          padding: 0rem 0rem 0rem 2rem;
+
+        to {
+          color: #666666;
+          padding: 0;
+
+
+      }
+    }
+  }
 `;
 
 export const StyledHeroImage = styled.img`
@@ -76,11 +109,39 @@ export const StyledHeroImage = styled.img`
     transform: scale(1.01); 
     transition: transform 0.3s ease-in-out
   }
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: imageanimation;
+    @keyframes imageanimation {
+      from {
+        transform: scale(1.05); 
+
+        to {
+          transform: scale(1); 
+
+
+      }
+    }
+  }
+
+  
 `;
 
 export const StyledHeroLinkSection = styled.div`
   disply: flex;
   padding-bottom: .8rem;
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: linkssection;
+    @keyframes linkssection {
+      from {
+        padding-left: 2rem;
+        to {
+        padding-left: 0;
+
+      }
+    }
+  }
 `;
 
 export const StyledHeroLink = styled.a`
@@ -93,4 +154,16 @@ export const StyledHeroLink = styled.a`
     transform: scale(1.05); 
     transition: transform 0.3s ease-in-out;
   }
+  
+  animation-duration: 1s;
+  animation-name: linkscolor;
+  @keyframes linkscolor {
+    from {
+        color: #999999;
+      to {
+        color: #EFFFFA;
+
+    }
+  }
+  
 `;

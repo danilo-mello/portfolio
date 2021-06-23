@@ -29,6 +29,22 @@ export const StyledContactTitlesSection = styled.div`
     padding: 0;
     margin: 0;
   }
+  
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: slidein;
+    @keyframes slidein {
+      from {
+        padding-right: 16rem;
+      }
+    
+      to {
+        padding-right: 10rem;
+        padding-bottom: 12rem;
+      }
+    }
+  }
+
 `;
 
 

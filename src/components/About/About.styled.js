@@ -34,6 +34,17 @@ export const StyledAboutPart1 = styled.div`
     padding: 0;
     margin: 0;
   }
+  @media (min-width: 576px) {
+    animation-duration: 1s;
+    animation-name: slidein;
+    @keyframes slidein {
+      from {
+        padding-top: 2rem;
+      to {
+        padding-top: 9rem;
+      }
+    }
+  }
 
 `;
 
