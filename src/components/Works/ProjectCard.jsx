@@ -12,8 +12,10 @@ import {
     StyledProjectTool
 } from './ProjectCard.styled';
 
+import RenderIcon from './RenderIcon'
 
 const ProjectsCard = (props) => {
+
     return (
 
         <StyledProjectsCard>
@@ -33,9 +35,17 @@ const ProjectsCard = (props) => {
 
             <StyledProjectTools>
                 {props.tools && props.tools.map(tool => {
-                        return(
-                            <StyledProjectTool>{tool.icon} {tool.name}</StyledProjectTool>
-                        )
+                        if (tool.icon.key !== null){
+                            return(
+                                <StyledProjectTool key={tool.name}>  <RenderIcon tag={tool.icon} /> {tool.name}</StyledProjectTool>
+                            )
+                        } else {
+                            return(
+                                <StyledProjectTool key={tool.name}> {tool.name}</StyledProjectTool>
+                            )
+                        }
+
+
                     }
                 )}
 
