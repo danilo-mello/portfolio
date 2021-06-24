@@ -15,7 +15,9 @@ import {
     SiDjango,
     SiJava,
     SiSass,
-    SiRedux
+    SiRedux,
+    SiTailwindcss,
+    SiBootstrap,
 
 } from "react-icons/si";
 
@@ -26,7 +28,7 @@ const ProjectsList = () => {
             <ProjectCard 
                 name="Calc Log" 
                 title="Calc Log"   
-                description="Calculator web app with saving log function"
+                description="CalcLog is a calculator app that allows you to save your calculation logs with the result, title and a comment. They'll be stored in the cloud and can be checked anytime on any device! Sign in with a Google Account to start."
                 link="https://calc-log.vercel.app/"
                 github="https://github.com/danilo-mello/calculator"
                 image={calclog}
@@ -35,6 +37,7 @@ const ProjectsList = () => {
                     {name: "Javascript", icon: <SiJavascript />},
                     {name: "Firebase", icon: <SiFirebase />},
                     {name: "Redux", icon: <SiRedux />},
+                    {name: "Tailwind", icon: <SiTailwindcss />}
                 ]}
             />
 
@@ -49,13 +52,14 @@ const ProjectsList = () => {
                     {name: "Python", icon: <SiPython />}, 
                     {name: "Django", icon: <SiDjango />},
                     {name: "PostgresSQL", icon: <SiPostgresql />},
+                    {name: "Bootstrap", icon: <SiBootstrap />},
                 ]}
 
             />
             <ProjectCard 
                 name="For Each" 
                 title="For Each"   
-                description="Java Aplication"
+                description="ForEachItem is a Java application which allows you to know the price per unit of a produce, by informing the price per lb."
                 link="https://cookie777.github.io/ForEach-Item/lp/"
                 github="https://github.com/cookie777/ForEach-Item"
                 image={foreach}

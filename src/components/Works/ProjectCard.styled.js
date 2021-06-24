@@ -75,7 +75,7 @@ cursor: pointer;
 `;
 
 export const StyledProjectDescription = styled.div`
-  padding: 1rem;
+  padding: 2rem;
   color: #0D0C1D;
   font-size: 1.2rem;
   font-weigth: 350;

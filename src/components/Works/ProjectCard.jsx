@@ -43,7 +43,7 @@ const ProjectsCard = (props) => {
       
             <StyledProjectLinksSection>
 
-                <StyledProjectLink href={props.link} target="_blank">Visit!</StyledProjectLink>
+                <StyledProjectLink href={props.link} target="_blank">Visit</StyledProjectLink>
                 <StyledProjectLink href={props.github} target="_blank">Github</StyledProjectLink>
 
             </StyledProjectLinksSection>

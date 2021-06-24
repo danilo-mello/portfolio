@@ -6,7 +6,7 @@ import ProjectsList from './ProjectsList'
 
 const Projects = () => {
     return (
-        <StyledProjectsSection>
+        <StyledProjectsSection id="works">
 
             <ProjectsSectionTitle>
                 works
