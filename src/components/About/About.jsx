@@ -37,7 +37,7 @@ import {
 
 const About = () => {
     return (
-        <StyledAboutSection>
+        <StyledAboutSection id="about">
 
             <StyledAboutPart1>
 

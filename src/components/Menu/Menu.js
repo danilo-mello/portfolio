@@ -9,13 +9,13 @@ const Menu = ({ open }) => {
       <a href="/">
         home
       </a>
-      <a href="/projects">
+      <a href="#about">
+        about
+      </a>
+      <a href="#works">
         works
       </a>
-      <a href="/about">
-        about
-        </a>
-      <a href="/contact">
+      <a href="#contact">
         contact
         </a>
     </StyledMenu>

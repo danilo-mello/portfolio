@@ -17,11 +17,11 @@ const Hero = () => {
         <StyledHeroTitle>danilo mello</StyledHeroTitle>
         <StyledHeroSubTitle>portfolio - developer</StyledHeroSubTitle>
         <StyledHeroLinkSection>
-          <StyledHeroLink href="/projects">works </StyledHeroLink>
+          <StyledHeroLink href="#about">about </StyledHeroLink> 
           &bull;
-          <StyledHeroLink href="/about"> about </StyledHeroLink> 
+          <StyledHeroLink href="#works"> works </StyledHeroLink>
           &bull;
-          <StyledHeroLink href="/contact"> contact </StyledHeroLink>  
+          <StyledHeroLink href="#contact"> contact </StyledHeroLink>  
         </StyledHeroLinkSection>
        
         <StyledHeroImage src={home} alt="danilo mello" />

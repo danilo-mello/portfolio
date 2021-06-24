@@ -13,7 +13,7 @@ import ContactForm from './ContactForm'
 const Contact = () => {
     return (
 
-        <StyledContatcSection >
+        <StyledContatcSection id="contact">
 
             <StyledContactTitlesSection>
 

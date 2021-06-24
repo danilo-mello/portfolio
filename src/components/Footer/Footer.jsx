@@ -13,11 +13,11 @@ const Footer = () => {
       <StyledFooterLinks>
         <StyledFooterLink href="/">home </StyledFooterLink>
         &bull;
-        <StyledFooterLink href="/projects"> works </StyledFooterLink>
+        <StyledFooterLink href="#projects"> works </StyledFooterLink>
         &bull;
-        <StyledFooterLink href="/about"> about </StyledFooterLink> 
+        <StyledFooterLink href="#about"> about </StyledFooterLink> 
         &bull;
-        <StyledFooterLink href="/contact"> contact </StyledFooterLink> 
+        <StyledFooterLink href="#contact"> contact </StyledFooterLink> 
       </StyledFooterLinks>
       <StyledFooterCR>
         © Danilo Mello 2021 - All Rights Reserved
