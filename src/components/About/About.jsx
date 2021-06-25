@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useHistory } from "react-router-dom";
+
 import { 
     StyledAboutSection,
     StyledAboutPart1,
@@ -16,26 +18,19 @@ import {
     StyledButton,
 } from './About.styled';
 
+import RenderIcon from '../helpers/RenderIcon'
 
-import { 
-    SiJavascript, 
-    SiReact, 
-    SiPython, 
-    SiNodeDotJs, 
-    SiPostgresql, 
-    SiFirebase,
-    SiDjango,
-    SiJava,
-    SiMysql,
-    SiSass,
-    SiMongodb,
-    SiRedux
-
-} from "react-icons/si";
-
-
+import data from '../../static/projectsData.json'
 
 const About = () => {
+
+    const history = useHistory();
+
+    const resumeHandler = () => {
+        // history.push("/resume")
+        history.push("/")
+    }
+
     return (
         <StyledAboutSection id="about">
 
@@ -50,7 +45,7 @@ const About = () => {
                     <StyledAboutDescriptionP>
                         A developer who loves building applications and websites that make life easier. A hard worker who combines a passion for web development with expertise in logic. Have developed several websites and applications mainly using React or Django.
                     </StyledAboutDescriptionP>
-                    <StyledButton>
+                    <StyledButton onClick={() => resumeHandler()}>
                         Resume
                     </StyledButton>
                 </StyledAboutDescription>
@@ -61,113 +56,29 @@ const About = () => {
                 <StyledTitleH1>Skills</StyledTitleH1>
                 <StyledSkillsSection>
 
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiReact  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            React
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiNodeDotJs  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Node
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiJavascript  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Javascript
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiPython  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Python
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiMongodb  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            MongoDB
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiRedux  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Redux
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiPostgresql  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            PostgresSQL
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiFirebase  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Firebase
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiDjango  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Django
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiJava  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Java
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-                    
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiMysql  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            MySQL
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
-                    
-                    <StyledSkillCard>
-                        <StyledSkillCardIcon>
-                            <SiSass  />
-                        </StyledSkillCardIcon>
-                        <StyledSkillCardTitle>
-                            Sass
-                        </StyledSkillCardTitle>
-                    </StyledSkillCard>
+                    {data.skills && data.skills.map(skill => {
+                        
+                        if(skill.icon !== undefined){
+                            return(
+                                <StyledSkillCard key={skill.name}>
+                                    <StyledSkillCardIcon>
+                                        <RenderIcon tag={skill.icon} />
+                                    </StyledSkillCardIcon>
+                                    <StyledSkillCardTitle>
+                                        {skill.name}
+                                    </StyledSkillCardTitle>
+                                </StyledSkillCard>
+                            )
+                        } else {
+                            return(
+                                <StyledSkillCard>
+                                    <StyledSkillCardTitle>
+                                        {skill.name}
+                                    </StyledSkillCardTitle>
+                                </StyledSkillCard>
+                            )
+                        }
+                    })}
                     
                 </StyledSkillsSection>
             </StyledAboutPart2>

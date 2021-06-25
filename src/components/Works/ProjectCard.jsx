@@ -12,7 +12,7 @@ import {
     StyledProjectTool
 } from './ProjectCard.styled';
 
-import RenderIcon from './RenderIcon'
+import RenderIcon from '../helpers/RenderIcon'
 
 const ProjectsCard = (props) => {
 
@@ -44,8 +44,6 @@ const ProjectsCard = (props) => {
                                 <StyledProjectTool key={tool.name}> {tool.name}</StyledProjectTool>
                             )
                         }
-
-
                     }
                 )}
 

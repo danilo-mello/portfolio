@@ -7,27 +7,24 @@ import data from '../../static/projectsData.json'
 
 const ProjectsList = () => {
 
-
     return (
-
         <StyledProjectsList>
 
             {data.projects && data.projects.map(project => {
                     return(
                         <ProjectCard 
-                        key={project.name}
-                        name={project.name} 
-                        title={project.title}   
-                        description={project.description}
-                        link={project.link}
-                        github={project.github}
-                        image={project.image}
-                        tools={project.tools}
+                            key={project.name}
+                            name={project.name} 
+                            title={project.title}   
+                            description={project.description}
+                            link={project.link}
+                            github={project.github}
+                            image={project.image}
+                            tools={project.tools}
                         />
                     )
             })}
         </StyledProjectsList>
-
     )
 }
 
