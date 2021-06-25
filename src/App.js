@@ -16,6 +16,7 @@ import Hero from './components/Hero/Hero';
 import Projects from './components/Works/Projects';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import ResumePage from './pages/ResumePage';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -28,6 +29,8 @@ function App() {
       <Route exact path="/projects" component={WorksPage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/contact" component={ContactPage} />
+      <Route exact path="/resume" component={ResumePage} />
+
       {/* <Route component={PageNotFound} /> */}
     
       <ThemeProvider theme={theme}>

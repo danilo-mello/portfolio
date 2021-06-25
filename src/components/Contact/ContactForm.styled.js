@@ -42,10 +42,7 @@ export const StyledContactForm = styled.div`
     border: 2px solid #999999;
     border-radius: 7px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    &:hover {
-      transform: scale(1.01); 
-      transition: transform 0.3s ease-in-out
-    }
+
     @media (max-width: 576px) {
       margin-left: 1rem;
       margin-right: 1rem;
@@ -62,14 +59,11 @@ export const StyledContactForm = styled.div`
     margin-right: 1.5rem;
     height: 6rem;
     resize: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border: 2px solid #999999;
     border-radius: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    &:hover {
-      transform: scale(1.01); 
-      transition: transform 0.3s ease-in-out
-    }
+
     @media (max-width: 576px) {
       margin-left: 1rem;
       margin-right: 1rem;

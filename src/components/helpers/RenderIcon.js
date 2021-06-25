@@ -4,11 +4,14 @@ import {
     SiJavascript, 
     SiReact, 
     SiPython, 
+    SiNodeDotJs, 
     SiPostgresql, 
     SiFirebase,
     SiDjango,
     SiJava,
+    SiMysql,
     SiSass,
+    SiMongodb,
     SiRedux,
     SiTailwindcss,
     SiBootstrap,
@@ -16,18 +19,22 @@ import {
 } from "react-icons/si";
 
 class RenderIcon extends Component {
+    
     components = {
         SiJavascript, 
         SiReact, 
         SiPython, 
+        SiNodeDotJs, 
         SiPostgresql, 
         SiFirebase,
         SiDjango,
         SiJava,
+        SiMysql,
         SiSass,
+        SiMongodb,
         SiRedux,
-        SiTailwindcss,
         SiBootstrap,
+        SiTailwindcss,
     };
     
     render() {
