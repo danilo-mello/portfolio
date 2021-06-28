@@ -1,0 +1,39 @@
+{
+    "resume": {
+        "name": "Danilo Mello",
+        "profession": "Full Stack Devoloper",
+        "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "works": [
+            {
+                "period": "Feb 2015 - Dec 2019 ",
+                "title": "Store Coordinator",
+                "company": "Constru Sans - Santa Barbara d'Oeste, Brazil",
+                "description": "Family-owned construction material store, acted in many areas of the company over the years, including:\n\nDaily customer service, selling, after-sales.\n\nProspecting new suppliers, products, potential clients, market sales prices.\n\nLayout organization, restocking, assembling POS materials, support on the delivery team.\n\nMonthly sales reports to ownership.\n\nWorked on the transition to the new ownership from August/19 to December/19."
+            },
+            {
+                "period": "Feb 2014 - Jan 2015",
+                "title": "Engineering Intern",
+                "company": "Robert Bosch GmbH - Stuttgart, Germany",
+                "description": "list of work description...2"
+            }
+        ],
+        "education": [
+            {
+                "title": "Web And Mobile App Development Diploma",
+                "college": "Cornerstone International Community College Of Canada - Vancouver, Canada"
+            },
+            {
+                "title": "Production Engineering",
+                "college": "Universidade Anhanguera - Campinas, Brazil"
+            }
+        ],
+        "skills": [
+            "Python",
+            "Javascript",
+            "React"
+        ],
+        "adress": "Vancouver",
+        "contact": "Details..."
+        
+    }
+}
