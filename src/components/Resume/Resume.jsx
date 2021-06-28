@@ -1,100 +1,131 @@
 import React from 'react';
 
+import data from '../../static/resumeData.json'
+
 import { 
-    ResumeStyled
+    ResumeStyled,
+    ResumeContentSection,
+    ResumeWorksSection,
+    ResumeWorksAndEducationSection,
+    ResumeTitleSection,
+    ResumeTitleName,
+    ResumeTitleProfession,
+    ResumeTitleDescription,
+    ResumeWorksSectionTitle,
+    ResumeWork,
+    ResumeWorkList,
+    ResumeWorkPeriod,
+    ResumeWorkDetails,
+    ResumeWorkTitle,
+    ResumeWorkCompany,
+    ResumeEducationSection,
+    ResumeEducationSectionTitle,
+    ResumeEducation,
+    ResumeEducationTitle,
+    ResumeEducationName,
+    ResumeContactAndSkillsSection,
+    ResumeWorkDescription,
+    ResumeContactSection,
+    ResumeContactTitle,
+    ResumeContactContent,
+    ResumeSkillsSection,
+    ResumeSkillsTitle,
+    ResumeSkillsList,
+    ResumeSkill,
 } 
 from './Resume.styled';
 
 const Resume = () => {
     return(
         <ResumeStyled>
-            Resume
 
-            <div>
-                <div>Your name</div>
-                <div>Profession</div>
-                <div>
-                    Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-            </div>
+            <ResumeTitleSection>
+                <ResumeTitleName>{data.resume.name}</ResumeTitleName>
+                <ResumeTitleProfession>{data.resume.profession}</ResumeTitleProfession>
+                <ResumeTitleDescription>
+                    {data.resume.description}
+                </ResumeTitleDescription>
+            </ResumeTitleSection>
 
-            <div>
+            <ResumeContentSection>
 
-                <div>
+                <ResumeWorksAndEducationSection>
 
-                    <div>Work History</div>
+                    <ResumeWorksSection>
 
-                    <div>
-                        <div>
-                            From x - y
-                        </div>
-                        <div>
-                            <div>Job title 1</div>
-                            <div>Company 1</div>
-                            <div>list of job desciption 1</div>
-                        </div>
-                    </div>
+                        <ResumeWorksSectionTitle>Work History</ResumeWorksSectionTitle>
+                            <ResumeWorkList>
+                                {
+                                    data.resume.works.map(work => {
+                                        return(
+                                            <ResumeWork>
+                                                <ResumeWorkPeriod>
+                                                    {work.period}
+                                                </ResumeWorkPeriod>
+                                                <ResumeWorkDetails>
+                                                    <ResumeWorkTitle>{work.title}</ResumeWorkTitle>
+                                                    <ResumeWorkCompany>{work.company}</ResumeWorkCompany>
+                                                    <ResumeWorkDescription>{work.description}</ResumeWorkDescription>
+                                                </ResumeWorkDetails>
+                                            </ResumeWork>
+                                        )
+                                    })
+                                }
+                            </ResumeWorkList>
 
-                    <div>
-                        <div>
-                            From x - y
-                        </div>
-                        <div>
-                            <div>Job title 2</div>
-                            <div>Company 2</div>
-                            <div>list of job desciption 2</div>
-                        </div>
-                    </div>
+                    </ResumeWorksSection>
 
-                </div>
+                    <ResumeEducationSection>
+                        <ResumeEducationSectionTitle>Education</ResumeEducationSectionTitle>
 
-                <div>
+                        {
+                            data.resume.education.map(e => {
+                                return(
+                                    <ResumeEducation>
+                                        <ResumeEducationTitle>
+                                            {e.title}
+                                        </ResumeEducationTitle>
+                                        <ResumeEducationName>
+                                            {e.college}
+                                        </ResumeEducationName>
+                                    </ResumeEducation>
+                                )
+                            })
+                        }
 
-                    <div>Education</div>
+                    </ResumeEducationSection>
 
-                    <div>
-                        <div>
-                            Education title 1
-                        </div>
-                        <div>
-                            College name 1
-                        </div>
-                    </div>
 
-                    <div>
-                        <div>
-                            Education title 2
-                        </div>
-                        <div>
-                            College name 2
-                        </div>
-                    </div>
+                </ResumeWorksAndEducationSection>
 
-                </div>
+                <ResumeContactAndSkillsSection>
 
-                <div>
+                    <ResumeContactSection>
+                        <ResumeContactTitle>Contact</ResumeContactTitle>
+                        <ResumeContactContent>
+                            {data.resume.adress}
+                            {data.resume.contact}
+                        </ResumeContactContent>
+                    </ResumeContactSection>
 
-                </div>
+                    <ResumeSkillsSection>
+                        <ResumeSkillsTitle>Skills</ResumeSkillsTitle>
+                        <ResumeSkillsList>
+                            {
+                                data.resume.skills.map(skill => {
+                                    return(
+                                        <ResumeSkill>
+                                            {skill}
+                                        </ResumeSkill>
+                                    )
+                                })
+                            }
+                        </ResumeSkillsList>
+                    </ResumeSkillsSection>
 
-            </div>
+                </ResumeContactAndSkillsSection>     
 
-            <div>
-                <div>
-                    <div>Contact</div>
-                    <div>
-                        Adress
-                        Contact Details
-                    </div>
-                </div>
-
-                <div>
-                    <div>Skills</div>
-                    <div>
-                        List of skills
-                    </div>
-                </div>
-
-            </div>            
+            </ResumeContentSection>             
 
         </ResumeStyled>
     )

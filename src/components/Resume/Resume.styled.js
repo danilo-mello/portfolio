@@ -25,3 +25,63 @@ export const ResumeStyled = styled.div`
   border-radius: 25px;
 `;
 
+export const ResumeContentSection = styled.div`
+  display: flex;
+  justify-content: column;
+`;
+
+export const ResumeTitleSection = styled.div``;
+
+export const ResumeTitleName = styled.h1``;
+
+export const ResumeTitleProfession = styled.h2``;
+
+export const ResumeTitleDescription = styled.p``;
+
+export const ResumeWorksAndEducationSection = styled.div`
+    align-items: left;
+`;
+
+export const ResumeWorksSection = styled.div``;
+
+export const ResumeWorksSectionTitle = styled.h2``;
+
+export const ResumeWork = styled.div``;
+
+export const ResumeWorkList = styled.div``;
+
+export const ResumeWorkPeriod = styled.div``;
+
+export const ResumeWorkDetails = styled.div``;
+
+export const ResumeWorkTitle = styled.h3``;
+
+export const ResumeWorkCompany = styled.p``;
+
+export const ResumeWorkDescription = styled.p``;
+
+export const ResumeEducationSection = styled.div``;
+
+export const ResumeEducationSectionTitle = styled.h2``;
+
+export const ResumeEducation = styled.div``;
+
+export const ResumeEducationTitle = styled.h3``;
+
+export const ResumeEducationName = styled.div``;
+
+export const ResumeContactAndSkillsSection = styled.div``;
+
+export const ResumeContactSection = styled.div``;
+
+export const ResumeContactTitle = styled.h2``;
+
+export const ResumeContactContent = styled.div``;
+
+export const ResumeSkillsSection = styled.div``;
+
+export const ResumeSkillsTitle = styled.h2``;
+
+export const ResumeSkillsList = styled.div``;
+
+export const ResumeSkill = styled.div``;
