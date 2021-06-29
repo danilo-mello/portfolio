@@ -27,8 +27,8 @@ const About = () => {
     const history = useHistory();
 
     const resumeHandler = () => {
-        // history.push("/resume")
-        history.push("/")
+        history.push("/resume")
+        // history.push("/")
     }
 
     return (
@@ -43,8 +43,7 @@ const About = () => {
 
                 <StyledAboutDescription>
                     <StyledAboutDescriptionP>
-                        A developer who loves building applications and websites that make life easier. A hard worker who combines a passion for web development with expertise in logic. Have developed several websites and applications mainly using React or Django.
-                    </StyledAboutDescriptionP>
+                    A Full Stack Developer with strong logical thinking and creativity. Developed several web applications using modern frameworks and libraries like React, Next and Django. Great communication skills underscored by years of experience in retail.                    </StyledAboutDescriptionP>
                     <StyledButton onClick={() => resumeHandler()}>
                         Resume
                     </StyledButton>

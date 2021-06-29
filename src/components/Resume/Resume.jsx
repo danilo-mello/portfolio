@@ -65,7 +65,17 @@ const Resume = () => {
                                                 <ResumeWorkDetails>
                                                     <ResumeWorkTitle>{work.title}</ResumeWorkTitle>
                                                     <ResumeWorkCompany>{work.company}</ResumeWorkCompany>
-                                                    <ResumeWorkDescription>{work.description}</ResumeWorkDescription>
+                                                    <ul>
+                                                        {
+                                                            work.description.map(d => {
+                                                                return(
+                                                                    <ResumeWorkDescription>{d}</ResumeWorkDescription>
+                                                                )
+                                                            })
+                                                        }
+                                                        
+                                                    </ul>
+                                                    
                                                 </ResumeWorkDetails>
                                             </ResumeWork>
                                         )
@@ -104,8 +114,18 @@ const Resume = () => {
                         <ResumeContactTitle>Contact</ResumeContactTitle>
                         <ResumeContactContent>
                             {data.resume.adress}
-                            {data.resume.contact}
                         </ResumeContactContent>
+                        {
+                            data.resume.contact.map(cont => {
+                                return(
+                                    <ResumeContactContent>
+                                        {cont}
+                                    </ResumeContactContent>
+                                )
+
+                            })
+                        }
+
                     </ResumeContactSection>
 
                     <ResumeSkillsSection>
