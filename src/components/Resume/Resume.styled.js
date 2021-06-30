@@ -213,7 +213,7 @@ font-size: 1.5rem;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 cursor: pointer;
 margin-bottom: 5rem;
-margin-right: 5rem;
+margin-right: 2rem;
 text-decoration: none;
 align-items: center;
 &:hover {
