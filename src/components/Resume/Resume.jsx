@@ -48,11 +48,6 @@ const Resume = () => {
 
     const history = useHistory();
 
-    const downloadHandler = (e) => {
-        e.preventDefault()
-
-    }
-
     const backHandler = () => {
         history.push("/")
         window.scrollTo(0, 0)
@@ -184,7 +179,7 @@ const Resume = () => {
 
         </ResumeStyled>
 
-        <ResumeDownloadButton href="#">Download</ResumeDownloadButton>
+        <ResumeDownloadButton href="https://github.com/danilo-mello/portfolio/raw/main/src/static/resume.pdf">Download</ResumeDownloadButton>
         <ResumeDownloadButton onClick={() => backHandler()}>Home</ResumeDownloadButton>
         
         </>
