@@ -28,7 +28,7 @@ const About = () => {
 
     const resumeHandler = () => {
         history.push("/resume")
-        // history.push("/")
+        window.scrollTo(0, 0)
     }
 
     return (
