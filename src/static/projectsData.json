@@ -32,8 +32,8 @@
         {
             "name": "For Each",
             "title": "For Each",  
-            "description": "ForEachItem is a Java application which allows you to know the price per unit of a produce, by informing the price per lb.",
-            "link=": "https://cookie777.github.io/ForEach-Item/lp/",
+            "description": "ForaEchItem is a Java application which allows you to know the price per unit of a produce, by informing the price per lb.",
+            "link": "https://cookie777.github.io/ForEach-Item/lp/",
             "github": "https://github.com/cookie777/ForEach-Item",
             "image": "https://github.com/danilo-mello/portfolio/blob/main/src/static/img/foreach.png?raw=true",
             "tools": [

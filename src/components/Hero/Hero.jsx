@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <StyledHero >
         <StyledHeroTitle>danilo mello</StyledHeroTitle>
-        <StyledHeroSubTitle>portfolio - developer</StyledHeroSubTitle>
+        <StyledHeroSubTitle>portfolio - full stack developer</StyledHeroSubTitle>
         <StyledHeroLinkSection>
           <StyledHeroLink href="#about">about </StyledHeroLink> 
           &bull;
