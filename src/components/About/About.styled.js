@@ -8,14 +8,14 @@ export const StyledAboutSection = styled.div`
     padding: 0.5rem 0rem 0.5rem 0rem;
     margin: 5rem 0 0rem 1.75rem;
     background: linear-gradient(to top,
-      #555555 56%, #333333 25% 75% );
+      ${({ theme }) => theme.cardBackground} 56%, ${({ theme }) => theme.cardBackground1} 25% 75% );
 
   }
   margin-bottom: 2rem;
   margin-top: 1.5rem;
   width: 75rem;
   align-items: center;
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@ export const StyledAboutSection = styled.div`
   padding-right: 10rem;
   border-radius: 25px;
   background: linear-gradient(to top,
-    #555555 60%, #333333 25% 75% );
+    ${({ theme }) => theme.cardBackground} 60%, ${({ theme }) => theme.cardBackground1} 25% 75% );
 `;
 
 export const StyledAboutPart1 = styled.div`
@@ -79,8 +79,8 @@ export const StyledSkillCard = styled.div`
 
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem;
-  color: #EFFFFA;
+  padding: 1.4rem;
+  color: ${({ theme }) => theme.textColorDark};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
   border-radius: 25px;
   &:hover {
@@ -106,7 +106,7 @@ export const StyledTitle = styled.div`
 
 export const StyledTitleH1 = styled.h1`
   padding-right: 10rem;
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 3.5rem;
   text-shadow: 1px 1px #666666;
   font-weight: 350;
@@ -119,7 +119,7 @@ export const StyledTitleH1 = styled.h1`
 `;
 
 export const StyledTitleH2 = styled.h2`
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 2rem;
   justify-content: center;
   text-align: center;
@@ -133,7 +133,7 @@ export const StyledTitleH2 = styled.h2`
 `;
 
 export const StyledTitleH3 = styled.h3`
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 1.5rem;
   text-shadow: 1px 1px #666666;
   font-weight: 350;
@@ -145,13 +145,11 @@ export const StyledTitleH3 = styled.h3`
 
 export const StyledAboutDescription = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to top, #888888, #999999 );
+  background: ${({ theme }) => theme.cardBackground2};
   opacity: 0.9;
   border-radius: 25px;
   opacity: 0.9;
   margin-top: 5rem;
-
-
   height: 18rem;
   width: 40rem;
   justify-content: center;
@@ -186,11 +184,11 @@ export const StyledAboutDescriptionP = styled.p`
 export const StyledSkillCardTitle = styled.div`
   justify-content: center;
   text-align: center;
-  color: #EFFFFA;
-  font-size: 2rem;
+  color: ${({ theme }) => theme.textColorDark};
+  font-size: 1.8rem;
   text-shadow: 1px 1px #666666;
   font-weight: 350;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   @media (max-width: 576px) {
     font-size: 1rem;
     padding-top: 0;
@@ -202,7 +200,7 @@ export const StyledSkillCardTitle = styled.div`
 export const StyledSkillCardIcon = styled.div`
   justify-content: center;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4.5rem;
   @media (max-width: 576px) {
     font-size: 2rem;
   }
@@ -210,11 +208,11 @@ export const StyledSkillCardIcon = styled.div`
 `;
 
 export const StyledButton = styled.div`
-  background-color: #333333;
-  border: 2px solid #333333;
+  background-color: ${({ theme }) => theme.buttonBackground};
+  border: 2px solid ${({ theme }) => theme.buttonBackground};
   font-weight: 300;
   border-radius: 7px;
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   padding: 1rem 2rem;
   text-align: center;
   display: inline-block;
@@ -223,15 +221,13 @@ export const StyledButton = styled.div`
   cursor: pointer;
   margin-bottom: 5rem;
   &:hover {
-    color: #000000;
-    background-color: #555555;
-    transform: scale(1.01); 
+    color: ${({ theme }) => theme.textColorLight};
+    background: ${({ theme }) => theme.buttonBackgroundHover};
     transition: transform 0.3s ease-in-out
   }
   @media (max-width: 576px) {
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: 1rem;
-
   }
 `;

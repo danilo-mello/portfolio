@@ -201,11 +201,11 @@ font-size: 1rem;
 export const ResumeProjectTech = styled.div``;
 
 export const ResumeDownloadButton = styled.a`
-background-color: #333333;
-border: 2px solid #333333;
+background-color: ${({ theme }) => theme.buttonBackground};
+border: 2px solid ${({ theme }) => theme.buttonBackground};
 font-weight: 300;
 border-radius: 7px;
-color: #EFFFFA;
+color: ${({ theme }) => theme.textColorDark};
 padding: 1rem 2rem;
 text-align: center;
 display: inline-block;
@@ -217,9 +217,8 @@ margin-right: 2rem;
 text-decoration: none;
 align-items: center;
 &:hover {
-  color: #000000;
-  background-color: #555555;
-  transform: scale(1.01); 
+  color: ${({ theme }) => theme.textColorLight};
+  background: ${({ theme }) => theme.buttonBackgroundHover};
   transition: transform 0.3s ease-in-out
 }
 @media (max-width: 576px) {

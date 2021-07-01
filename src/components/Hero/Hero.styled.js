@@ -21,18 +21,18 @@ export const StyledHero = styled.div`
 
   width: 75rem;
   height: 58em;
-  border: 2px solid #333333;
+  // border: 2px solid #333333;
   border-radius: 25px;
-  background: linear-gradient(to bottom right, #333333 0%, #333333 50%, #555555 50%, #555555 100%);
+  background: linear-gradient(to bottom right, ${({ theme }) => theme.cardBackground} 0%, ${({ theme }) => theme.cardBackground} 50%, ${({ theme }) => theme.cardBackground1} 50%, ${({ theme }) => theme.cardBackground1} 100%);
   padding: 10rem 15rem 10rem 25rem;
 
 `;
 
 export const StyledHeroTitle = styled.h1`
   align-items: left;
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 3.5rem;
-  text-shadow: 1px 1px #666666;
+  text-shadow: 1px 1px ${({ theme }) => theme.textColorDark};
   font-weight: 350;
   margin-bottom: 0;
   @media (max-width: 576px) {
@@ -49,11 +49,11 @@ export const StyledHeroTitle = styled.h1`
     @keyframes bbb {
       from {
         padding: 0rem 0rem 0rem 2rem;
-        color: #999999;
+        color: ${({ theme }) => theme.cardBackground};
 
       to {
         padding: 0;
-        color: #EFFFFA;
+        color: ${({ theme }) => theme.textColorDark};
 
       }
     }
@@ -62,7 +62,7 @@ export const StyledHeroTitle = styled.h1`
 `;
 
 export const StyledHeroSubTitle = styled.h2`
-  color: #666666;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 1.5rem;
   font-weight: 300;
   text-align: left;
@@ -81,11 +81,11 @@ export const StyledHeroSubTitle = styled.h2`
     animation-name: ccc;
     @keyframes ccc {
       from {
-          color: #444444;
+          color: ${({ theme }) => theme.cardBackground};
           padding: 0rem 0rem 0rem 2rem;
 
         to {
-          color: #666666;
+          color: ${({ theme }) => theme.textColorDark};
           padding: 0;
 
 
@@ -132,6 +132,7 @@ export const StyledHeroImage = styled.img`
 
 export const StyledHeroLinkSection = styled.div`
   disply: flex;
+  color: ${({ theme }) => theme.textColorDark};
   padding-bottom: .8rem;
   @media (min-width: 576px) {
     animation-duration: 1s;
@@ -149,7 +150,7 @@ export const StyledHeroLinkSection = styled.div`
 
 export const StyledHeroLink = styled.a`
   text-decoration: none;
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 1.25rem;
   letter-spacing: 1px;
 
@@ -162,9 +163,9 @@ export const StyledHeroLink = styled.a`
   animation-name: linkscolor;
   @keyframes linkscolor {
     from {
-        color: #999999;
+        color: ${({ theme }) => theme.cardBackground};
       to {
-        color: #EFFFFA;
+        color: ${({ theme }) => theme.textColorDark};
 
     }
   }

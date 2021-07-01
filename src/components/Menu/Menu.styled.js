@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: ${({ theme }) => theme.primaryLight};
+  background: ${({ theme }) => theme.cardBackground};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -25,7 +25,7 @@ export const StyledMenu = styled.nav`
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.primaryDark};
+    color: ${({ theme }) => theme.textColorDark};
     text-decoration: none;
     transition: color 0.3s linear;
     
@@ -35,7 +35,7 @@ export const StyledMenu = styled.nav`
     }
 
     &:hover {
-      color: #333333;
+      color: ${({ theme }) => theme.powderblue};
       transform: scale(1.05); 
       transition: transform 0.3s ease-in-out
     }

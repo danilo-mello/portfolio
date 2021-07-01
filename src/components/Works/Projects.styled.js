@@ -18,19 +18,19 @@ export const StyledProjectsSection = styled.div`
     margin: 5rem 0 0rem 1.75rem;
   }
   padding-top: 5rem;
-  border: 2px solid #333333;
+  border: 2px solid ${({ theme }) => theme.cardBackground};
   border-radius: 25px;
-  background: linear-gradient(to left, #555555 25%, #333333 25% 75% );
+  background: linear-gradient(to left, ${({ theme }) => theme.cardBackground} 25%, ${({ theme }) => theme.cardBackground1} 25% 75% );
 
 `;
 
 export const ProjectsSectionTitle = styled.div`
   text-align: left;
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 3.5rem;
-  text-shadow: 1px 1px #666666;
+  text-shadow: 1px 1px ${({ theme }) => theme.textColorDark};
   font-weight: 350;
   @media (max-width: 576px) {
     font-size: 3rem;
