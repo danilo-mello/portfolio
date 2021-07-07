@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import data from '../../static/resumeData.json'
 
-import { 
+import {
     ResumeStyled,
     ResumeContentSection,
     ResumeWorksSection,
@@ -40,9 +40,10 @@ import {
     ResumeProjectName,
     ResumeProjectDescription,
     ResumeProjectTech,
-    ResumeDownloadButton
-} 
-from './Resume.styled';
+    ResumeDownloadButton,
+    ResumeButtons
+}
+    from './Resume.styled';
 
 const Resume = () => {
 
@@ -52,101 +53,101 @@ const Resume = () => {
         history.push("/")
         window.scrollTo(0, 0)
     }
-    return(
+    return (
         <>
-        <ResumeStyled>
+            <ResumeStyled>
 
-            <ResumeTitleSection>
-                <ResumeTitleName>{data.resume.name}</ResumeTitleName>
-                <ResumeTitleProfession>{data.resume.profession}</ResumeTitleProfession>
-            </ResumeTitleSection>
+                <ResumeTitleSection>
+                    <ResumeTitleName>{data.resume.name}</ResumeTitleName>
+                    <ResumeTitleProfession>{data.resume.profession}</ResumeTitleProfession>
+                </ResumeTitleSection>
 
-            <ResumeContactSection>
-                {
-                    data.resume.contact.map(cont => {
-                        return(
-                            <ResumeContactContent>
-                                {cont}
-                            </ResumeContactContent>
-                        )
-
-                    })
-                }
-            </ResumeContactSection>
-
-            <ResumeContentSection>
-
-                <ResumeSummarySection>
-                    <ResumeSummaryTitle>              
-                        Summary
-                    </ResumeSummaryTitle>
-                    <ResumeSummaryDescription>
-                        {data.resume.summary}
-                    </ResumeSummaryDescription>
-                </ResumeSummarySection>
-
-                <ResumeSkillsSection>
-                    <ResumeSkillsTitle>Skills</ResumeSkillsTitle>
-                    <ResumeSkillsList>
-                        {
-                            data.resume.skills.map(skill => {
-                                return(
-                                    <ResumeSkill>
-                                        {skill}
-                                    </ResumeSkill>
-                                )
-                            })
-                        }
-                    </ResumeSkillsList>
-                </ResumeSkillsSection>
-
-                <ResumeProjectsSection>
-                    <ResumeProjectsTitle>Projects</ResumeProjectsTitle>
-                    <ResumeProjectsList>
-                        {
-                            data.resume.projects.map(project => {
-                                return(
-                                    <ResumeProject>
-                                        <ResumeProjectName>
-                                            {project.name}
-                                        </ResumeProjectName>
-                                        <ResumeProjectDescription>
-                                            {project.description}
-                                        </ResumeProjectDescription>
-                                        <ResumeProjectTech>
-                                            <b>Technical Specifications:</b> {project.tech}
-                                        </ResumeProjectTech>
-                                    </ResumeProject>
-                                )
-                            })
-                        }
-                    </ResumeProjectsList>
-                </ResumeProjectsSection>
-
-                <ResumeEducationSection>
-                    <ResumeEducationSectionTitle>Education</ResumeEducationSectionTitle>
+                <ResumeContactSection>
                     {
-                        data.resume.education.map(e => {
-                            return(
-                                <ResumeEducation>
-                                    <ResumeEducationTitle>
-                                        {e.title}
-                                    </ResumeEducationTitle>
-                                    <ResumeEducationName>
-                                        {e.college}
-                                    </ResumeEducationName>
-                                </ResumeEducation>
+                        data.resume.contact.map(cont => {
+                            return (
+                                <ResumeContactContent>
+                                    {cont}
+                                </ResumeContactContent>
                             )
+
                         })
                     }
-                </ResumeEducationSection>
+                </ResumeContactSection>
 
-                <ResumeWorksSection>
-                    <ResumeWorksSectionTitle>Work History</ResumeWorksSectionTitle>
+                <ResumeContentSection>
+
+                    <ResumeSummarySection>
+                        <ResumeSummaryTitle>
+                            Summary
+                        </ResumeSummaryTitle>
+                        <ResumeSummaryDescription>
+                            {data.resume.summary}
+                        </ResumeSummaryDescription>
+                    </ResumeSummarySection>
+
+                    <ResumeSkillsSection>
+                        <ResumeSkillsTitle>Skills</ResumeSkillsTitle>
+                        <ResumeSkillsList>
+                            {
+                                data.resume.skills.map(skill => {
+                                    return (
+                                        <ResumeSkill>
+                                            {skill}
+                                        </ResumeSkill>
+                                    )
+                                })
+                            }
+                        </ResumeSkillsList>
+                    </ResumeSkillsSection>
+
+                    <ResumeProjectsSection>
+                        <ResumeProjectsTitle>Projects</ResumeProjectsTitle>
+                        <ResumeProjectsList>
+                            {
+                                data.resume.projects.map(project => {
+                                    return (
+                                        <ResumeProject>
+                                            <ResumeProjectName>
+                                                {project.name}
+                                            </ResumeProjectName>
+                                            <ResumeProjectDescription>
+                                                {project.description}
+                                            </ResumeProjectDescription>
+                                            <ResumeProjectTech>
+                                                <b>Technical Specifications:</b> {project.tech}
+                                            </ResumeProjectTech>
+                                        </ResumeProject>
+                                    )
+                                })
+                            }
+                        </ResumeProjectsList>
+                    </ResumeProjectsSection>
+
+                    <ResumeEducationSection>
+                        <ResumeEducationSectionTitle>Education</ResumeEducationSectionTitle>
+                        {
+                            data.resume.education.map(e => {
+                                return (
+                                    <ResumeEducation>
+                                        <ResumeEducationTitle>
+                                            {e.title}
+                                        </ResumeEducationTitle>
+                                        <ResumeEducationName>
+                                            {e.college}
+                                        </ResumeEducationName>
+                                    </ResumeEducation>
+                                )
+                            })
+                        }
+                    </ResumeEducationSection>
+
+                    <ResumeWorksSection>
+                        <ResumeWorksSectionTitle>Work History</ResumeWorksSectionTitle>
                         <ResumeWorkList>
                             {
                                 data.resume.works.map(work => {
-                                    return(
+                                    return (
                                         <ResumeWork>
                                             <ResumeWorkPeriod>
                                                 {work.period}
@@ -157,28 +158,31 @@ const Resume = () => {
                                                 <ul>
                                                     {
                                                         work.description.map(d => {
-                                                            return(
+                                                            return (
                                                                 <ResumeWorkDescription>{d}</ResumeWorkDescription>
                                                             )
                                                         })
                                                     }
-                                                    
+
                                                 </ul>
-                                                
+
                                             </ResumeWorkDetails>
                                         </ResumeWork>
                                     )
                                 })
                             }
                         </ResumeWorkList>
-                </ResumeWorksSection>
-            </ResumeContentSection>             
+                    </ResumeWorksSection>
+                </ResumeContentSection>
 
-        </ResumeStyled>
+            </ResumeStyled>
 
-        <ResumeDownloadButton href="https://github.com/danilo-mello/portfolio/raw/main/src/static/resume.pdf">Download</ResumeDownloadButton>
-        <ResumeDownloadButton onClick={() => backHandler()}>Home</ResumeDownloadButton>
-        
+            <ResumeButtons>
+
+                <ResumeDownloadButton href="https://github.com/danilo-mello/portfolio/raw/main/src/static/resume.pdf">Download</ResumeDownloadButton>
+                <ResumeDownloadButton onClick={() => backHandler()}>Home</ResumeDownloadButton>
+
+            </ResumeButtons>
         </>
     )
 }

@@ -11,7 +11,7 @@ export const theme = {
   textColorDark: "#0b4f6cff",
   buttonBackground: "#FFA69E",
   buttonBackgroundHover: "#7A0A00"
-  }
+}
 
   //black Theme
   // primaryDark: '#0D0C1D',
@@ -26,15 +26,6 @@ export const theme = {
   // textColorDark: "#EFFFFA",
   // buttonBackground: "#333333",
   // buttonBackgroundHover: "#555555"
-
-
-  // orange: '#b80c09ff',
-  // blue: '#0b4f6cff',
-  // cyan: '#01baefff',
-  // white: '#fbfbffff',
-  // black: '#040f16ff',
-  // aeroblue: '#b8f2e6',
-  // powderblue: "#aed9e0",
 
   //blue theme
   // primaryDark: '#0D0C1D',

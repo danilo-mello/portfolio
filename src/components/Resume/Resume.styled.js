@@ -2,11 +2,9 @@ import styled from 'styled-components';
 
 export const ResumeStyled = styled.div`
 @media (max-width: 576px) {
-    display: flex;
+    display: none;
     align-items: center;
-    width: 19rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-    margin: 5rem 0 0rem 1.75rem;
+    justify-content: center;
 
   }
   background: #FFFFFF;
@@ -99,7 +97,7 @@ export const ResumeWorkCompany = styled.p`
 export const ResumeWorkDescription = styled.li`
   font-size: 1.1rem;
   font-weight: 350;`
-;
+  ;
 
 export const ResumeEducationSection = styled.div``;
 
@@ -225,6 +223,17 @@ align-items: center;
   font-size: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
+
+}
+`;
+
+export const ResumeButtons = styled.div`
+@media (max-width: 576px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60%;
+  margin-bottom: 40%;
 
 }
 `;
