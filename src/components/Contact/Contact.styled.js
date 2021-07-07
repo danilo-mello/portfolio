@@ -15,13 +15,13 @@ export const StyledContatcSection = styled.div`
   margin-bottom: 2rem;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: ${({ theme }) => theme.textColorDark};
   display: flex;
   padding-left: 10rem;
   padding-right: 10rem;
   border-radius: 25px;
   background: linear-gradient(to top,
-    #555555 25%, #333333 25% 75% );
+    ${({ theme }) => theme.cardBackground} 25%, ${({ theme }) => theme.cardBackground1} 25% 75% );
 `;
 
 export const StyledContactTitlesSection = styled.div`
@@ -51,7 +51,7 @@ export const StyledContactTitlesSection = styled.div`
 
 
 export const StyledContactSubTitle = styled.h4`
-  color: #666666;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 1.5rem;
   font-weight: 300;
 
@@ -72,9 +72,9 @@ export const StyledContactSubTitle = styled.h4`
 `;
 
 export const StyledContactTitle = styled.h1`
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 3.5rem;
-  text-shadow: 1px 1px #666666;
+  text-shadow: 1px 1px ${({ theme }) => theme.textColorDark};;
   font-weight: 350;
   @media (max-width: 576px) {
     font-size: 2.5rem;

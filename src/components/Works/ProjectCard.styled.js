@@ -7,7 +7,7 @@ export const StyledProjectsCard = styled.div`
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(to top, #888888, #999999 );
+  background: ${({ theme }) => theme.cardBackground2};
   opacity: 0.9;
   width: 60rem;
   @media (max-width: 576px) {
@@ -52,11 +52,11 @@ export const StyledProjectLinksSection = styled.div`
 
 export const StyledProjectLink = styled.a`
 text-decoration: none;
-background-color: #333333;
-border: 2px solid #333333;
+background: ${({ theme }) => theme.buttonBackground};
+border: 2px solid ${({ theme }) => theme.buttonBackground};
 font-weight: 300;
 border-radius: 7px;
-color: #EFFFFA;
+color: ${({ theme }) => theme.textColorDark};
 padding: 1rem 2rem;
 text-align: center;
 display: inline-block;
@@ -64,9 +64,8 @@ font-size: 1.5rem;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 cursor: pointer;
 &:hover {
-  color: #000000;
-  background-color: #555555;
-  transform: scale(1.01); 
+  color: ${({ theme }) => theme.textColorLight};
+  background: ${({ theme }) => theme.buttonBackgroundHover};
   transition: transform 0.3s ease-in-out
 }
 @media (max-width: 576px) {
@@ -76,7 +75,7 @@ cursor: pointer;
 
 export const StyledProjectDescription = styled.div`
   padding: 2rem;
-  color: #0D0C1D;
+  color: ${({ theme }) => theme.textColorDark};
   font-size: 1.2rem;
   font-weigth: 350;
 
@@ -90,7 +89,7 @@ export const StyledProjectTitle = styled.div`
   @media (max-width: 576px) {
     font-size: 2rem;
   }
-  color: #0D0C1D;
+  color: ${({ theme }) => theme.textColorDark};
   &:hover {
     transform: scale(1.01); 
     transition: transform 0.3s ease-in-out
@@ -111,8 +110,8 @@ export const StyledProjectTools = styled.div`
 `;
 
 export const StyledProjectTool = styled.div`
-  background: #777777;
-  color: #0D0C1D;
+  background: ${({ theme }) => theme.cardBackground};
+  color: ${({ theme }) => theme.textColorDark};
   padding: 1rem;
   margin-left: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

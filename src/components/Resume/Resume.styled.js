@@ -2,11 +2,9 @@ import styled from 'styled-components';
 
 export const ResumeStyled = styled.div`
 @media (max-width: 576px) {
-    display: flex;
+    display: none;
     align-items: center;
-    width: 19rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-    margin: 5rem 0 0rem 1.75rem;
+    justify-content: center;
 
   }
   background: #FFFFFF;
@@ -99,7 +97,7 @@ export const ResumeWorkCompany = styled.p`
 export const ResumeWorkDescription = styled.li`
   font-size: 1.1rem;
   font-weight: 350;`
-;
+  ;
 
 export const ResumeEducationSection = styled.div``;
 
@@ -201,11 +199,11 @@ font-size: 1rem;
 export const ResumeProjectTech = styled.div``;
 
 export const ResumeDownloadButton = styled.a`
-background-color: #333333;
-border: 2px solid #333333;
+background-color: ${({ theme }) => theme.buttonBackground};
+border: 2px solid ${({ theme }) => theme.buttonBackground};
 font-weight: 300;
 border-radius: 7px;
-color: #EFFFFA;
+color: ${({ theme }) => theme.textColorDark};
 padding: 1rem 2rem;
 text-align: center;
 display: inline-block;
@@ -217,15 +215,25 @@ margin-right: 2rem;
 text-decoration: none;
 align-items: center;
 &:hover {
-  color: #000000;
-  background-color: #555555;
-  transform: scale(1.01); 
+  color: ${({ theme }) => theme.textColorLight};
+  background: ${({ theme }) => theme.buttonBackgroundHover};
   transition: transform 0.3s ease-in-out
 }
 @media (max-width: 576px) {
   font-size: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
+
+}
+`;
+
+export const ResumeButtons = styled.div`
+@media (max-width: 576px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60%;
+  margin-bottom: 40%;
 
 }
 `;

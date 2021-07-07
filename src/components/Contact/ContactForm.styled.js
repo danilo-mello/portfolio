@@ -9,9 +9,9 @@ export const StyledContactForm = styled.div`
 
   }
 
-  background: linear-gradient(to top, #888888, #999999 );
+  background: ${({ theme }) => theme.cardBackground2};
   align-items: center;
-  color: #EFFFFA;
+  color: ${({ theme }) => theme.textColorDark};
   display: flex;
   justify-content: space-between
   flex-direction: row;
@@ -39,7 +39,7 @@ export const StyledContactForm = styled.div`
     margin-right: 1.5rem;
     height: 2.5rem;
     font-size: 1.25rem;
-    border: 2px solid #999999;
+    border: 2px solid ${({ theme }) => theme.cardBackground2};
     border-radius: 7px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 
@@ -60,7 +60,7 @@ export const StyledContactForm = styled.div`
     height: 6rem;
     resize: none;
     font-size: 1.25rem;
-    border: 2px solid #999999;
+    border: 2px solid ${({ theme }) => theme.cardBackground2};
     border-radius: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -77,7 +77,7 @@ export const StyledContactForm = styled.div`
     font-weight: 300;
     padding-top: 2rem;
     padding-left: 1.5rem;
-    color: #0D0C1D;
+    color: ${({ theme }) => theme.textColorDark};
     &:hover {
       transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
@@ -90,11 +90,11 @@ export const StyledContactForm = styled.div`
 
   button {
 
-    background-color: #333333;
-    border: 2px solid #333333;
+    background-color: ${({ theme }) => theme.buttonBackground};
+    border: 2px solid ${({ theme }) => theme.buttonBackground};
     font-weight: 300;
     border-radius: 7px;
-    color: #EFFFFA;
+    color: ${({ theme }) => theme.textColorDark};
     padding: 1rem;
     text-align: center;
     width: 10rem;
@@ -105,9 +105,9 @@ export const StyledContactForm = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     &:hover {
-      color: #000000;
-      background-color: #555555;
-      transform: scale(1.01); 
+      color: ${({ theme }) => theme.textColorLight};
+      background: ${({ theme }) => theme.buttonBackgroundHover};
+        transform: scale(1.01); 
       transition: transform 0.3s ease-in-out
     }
     @media (max-width: 576px) {
