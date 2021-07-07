@@ -54,7 +54,7 @@ const Resume = () => {
     }
     return(
         <>
-        <ResumeStyled id="Resume">
+        <ResumeStyled>
 
             <ResumeTitleSection>
                 <ResumeTitleName>{data.resume.name}</ResumeTitleName>
@@ -172,9 +172,6 @@ const Resume = () => {
                             }
                         </ResumeWorkList>
                 </ResumeWorksSection>
-
-
-
             </ResumeContentSection>             
 
         </ResumeStyled>
