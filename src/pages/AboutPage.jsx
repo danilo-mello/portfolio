@@ -8,10 +8,10 @@ import { theme } from '../theme';
 import Burger from '../components/Burger/Burger';
 import Menu from '../components/Menu/Menu';
 import About from '../components/About/About'
-// import PageNotFound from '../components/PageNotFound/PageNotFound'
 import Footer from '../components/Footer/Footer';
 
 const AboutPage = () => {
+  
   const [open, setOpen] = useState(false);
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));

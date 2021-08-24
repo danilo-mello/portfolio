@@ -15,6 +15,7 @@ import {
     SiRedux,
     SiTailwindcss,
     SiBootstrap,
+    SiStyledComponents
 
 } from "react-icons/si";
 
@@ -35,6 +36,7 @@ class RenderIcon extends Component {
         SiRedux,
         SiBootstrap,
         SiTailwindcss,
+        SiStyledComponents
     };
     
     render() {
