@@ -47,7 +47,7 @@
             "description": "Ecommerce is a React application ecommerce.",
             "link": "https://ecommerce-five-tau.vercel.app/stores",
             "github": "https://github.com/danilo-mello/ecommerce",
-            "image": "https://github.com/danilo-mello/portfolio/blob/main/src/static/img/foreach.png?raw=true",
+            "image": "https://github.com/danilo-mello/portfolio/blob/main/src/static/img/ecommerce.png?raw=true",
             "tools": [
                 {"name": "React", "icon": "SiReact"}, 
                 {"name": "JavaScript", "icon": "SiJavascript"},
@@ -60,7 +60,7 @@
             "description": "Portfolio Page.",
             "link": "https://danilomello.io",
             "github": "https://github.com/danilo-mello/ecommerce",
-            "image": "https://github.com/danilo-mello/portfolio/blob/main/src/static/img/foreach.png?raw=true",
+            "image": "https://github.com/danilo-mello/portfolio/blob/main/src/static/img/portfolio.png?raw=true",
             "tools": [
                 {"name": "React", "icon": "SiReact"}, 
                 {"name": "JavaScript", "icon": "SiJavascript"},
