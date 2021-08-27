@@ -8,7 +8,7 @@ import {
   StyledHeroLink,
 } from './Hero.styled';
 
-  import home from '../../static/img/home1.jpg'
+  import home from '../../static/img/home.jpg'
 
 const Hero = () => {
     
